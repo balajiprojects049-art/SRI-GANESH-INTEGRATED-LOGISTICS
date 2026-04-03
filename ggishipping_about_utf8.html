@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>::GGI Shipping Agency (About Us)  ::</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="stuHover.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+      
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]=["images/head_1.jpg", "", ""] //plain image syntax
+fadeimages[1]=["images/head_2.jpg", "", ""] //plain image syntax
+fadeimages[2]=["images/head_3.jpg", "", ""] //plain image syntax
+fadeimages[2]=["images/head_4.jpg", "", ""] //plain image syntax
+var fadebgcolor="#ffffff"
+
+////NO need to edit beyond here/////////////
+ 
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+ 
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+ 
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p<theimages.length;p++){
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+ 
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+else
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'"></div>')
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+ 
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+ 
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML='<a href="'+this.theimages[picindex][1]+'" target="'+this.theimages[picindex][2]+'">'
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+='</a>'
+picobj.innerHTML=slideHTML
+}
+ 
+ 
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+ 
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+ 
+ 
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+</script></head>
+
+<body>
+      <div id="wrapper">
+	   <link href="style.css" rel="stylesheet" type="text/css" />
+
+<div class="tabs">
+
+	    <div id="menu">
+
+		<ul id="nav">
+
+	<li class="top"><a href="index.php" class="top_link"><span>Home</span></a></li>
+
+	<li class="top"><a href="about_us.php" class="top_link"><span class="down">About Us</span></a>
+
+		<!--<ul class="sub">
+
+			<li><a href="#nogo3" class="fly">Cameras</a>
+
+					<ul>
+
+						<li><a href="#nogo4">Nikon</a></li>
+
+						<li><a href="#nogo5">Minolta</a></li>
+
+						<li><a href="#nogo6">Pentax</a></li>
+
+					</ul>
+
+			</li>
+
+			<li class="mid"><a href="#nogo7" class="fly">Lenses</a>
+
+					<ul>
+
+						<li><a href="#nogo8">Wide Angle</a></li>
+
+						<li><a href="#nogo9">Standard</a></li>
+
+						<li><a href="#nogo10">Telephoto</a></li>
+
+						<li><a href="#nogo11" class="fly">Zoom</a>
+
+							<ul>
+
+								<li><a href="#nogo12">35mm to 125mm</a></li>
+
+								<li><a href="#nogo13">50mm to 250mm</a></li>
+
+								<li><a href="#nogo14">125mm to 500mm</a></li>
+
+							</ul>
+
+						</li>
+
+						<li><a href="#nogo15">Mirror</a></li>
+
+						<li><a href="#nogo16" class="fly">Non standard</a>
+
+							<ul>
+
+								<li><a href="#nogo17">Bayonet mount</a></li>
+
+								<li><a href="#nogo18">Screw mount</a></li>
+
+							</ul>
+
+						</li>
+
+					</ul>
+
+			</li>
+
+			<li><a href="vision_mission_values.php">Vision / Mission / Values</a></li>
+
+			<li><a href="profile.php">Profile</a></li>
+
+			<li><a href="awards_recognition.php">Awards / Recognition</a></li>
+
+			<li><a href="social_contribution.php">Social Contribution</a></li>
+
+			<li><a href="client_testimonial.php">Client Testimonials</a></li>
+
+		</ul>-->
+
+	</li>
+
+	<li class="top"><a href="#" class="top_link"><span class="down">Our Services</span></a>
+
+		<ul class="sub">
+
+			<li><a href="freight_forwarding.php" class="fly">Freight Forwarding</a>
+
+					<ul>
+
+						<li><a href="sea_freight.php">Sea Freight</a></li>
+
+						<li><a href="air_freight.php">Air Freight</a></li>
+
+					</ul>
+
+			</li>
+
+			<li><a href="break_bulk.php">Break Bulk</a></li>
+
+			<li><a href="project_forwarding.php">Project Forwarding</a></li>
+
+			<li><a href="hazardous_cargo.php">Hazardous Cargo</a></li>
+
+			<li><a href="transportation.php">Transportation</a></li>
+
+			<li><a href="warehousing.php">Warehousing</a></li>
+
+			<li><a href="custom_clearnce.php">Customs Clearance</a></li>
+
+			<!--<li><a href="value_added_services.php" class="fly">Value Added Services</a>
+
+					<ul>
+
+						<li><a href="door_delivery.php">Door to Door Delivery</a></li>
+
+						<li><a href="exhibition_cargo.php">Exhibition Cargo</a></li>
+
+						<li><a href="cargo_insurance.php">Cargo Insurance</a></li>
+
+					</ul>
+
+			</li>-->
+
+		</ul>
+
+	</li>
+
+	<li class="top"><a href="#" class="top_link"><span class="down">Value Added Info</span></a>
+
+		<ul class="sub">
+
+			<li><a href="containerspecification.php">Container Specification</a></li>
+
+		</ul>
+
+	</li>
+
+	<li class="top"><a href="testimonials.php" class="top_link"><span>Testimonials</span></a></li>
+
+	<li class="top"><a href="contact_us.php#enquiry" class="top_link"><span>Enquiry Form</span></a></li>
+
+	<li class="top"><a href="contact_us.php" class="top_link"><span>Contact Us</span></a></li>
+
+</ul>
+
+                        
+
+  </div>
+  
+   
+
+					 </div>
+                     
+                     
+                     
+                     
+                    	    
+		
+		<div class="head"><script type="text/javascript">new fadeshow(fadeimages, 970, 248, 0, 2500, 1, "R")</script>
+		<div class="logo"><a href="index.php"><img src="images/logo.png" alt="GGI Shipping Agency" width="179" height="104" border="0" /></a></div>
+		<!--<div class="head_txt">
+			   <span class="black_bold">About Us<br />
+</span>
+		       A total one-resource integrated logistics and transportation service provider, GGI Shipping Agency offers a wide range of quality solutions in areas ranging from Transport Operations to Freight booking, Project Forwarding ,Documentation and shipment of Hazardous cargo, etc.</div>-->
+		 <!--<div class="head_left">
+		  
+	      </div>-->
+		    <!--<div class="head_right">
+			 
+	      </div>-->
+        </div>
+				
+				
+			   <div class="clear"></div>
+			    <div class="index_conent">
+			     <link href="style.css" rel="stylesheet" type="text/css" />
+<div class="inner_left">
+			      <div class="left_nav_top">Our Services</div>
+			       <div class="left_nav_mid">
+			         <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                       <tr>
+                         <td width="10%" height="25"><img src="images/left_nav_arro_m.jpg" alt="" width="13" height="12" /></td>
+                         <td width="90%" height="25"><a href="freight_forwarding.php" class="txt_nav">Freight Forwarding</a></td>
+                       </tr>
+                       <tr>
+                         <td height="20" align="center"><img src="images/left_nav_arro_sub.jpg" alt="" width="6" height="7" /></td>
+                         <td height="20"><a href="sea_freight.php" class="txt_nav">Sea Freight</a></td>
+                       </tr>
+                       <tr>
+                         <td height="20" align="center"><img src="images/left_nav_arro_sub.jpg" alt="" width="6" height="7" /></td>
+                         <td height="20"><a href="air_freight.php" class="txt_nav">Air Freight</a></td>
+                       </tr>
+                       <tr>
+                         <td height="25"><img src="images/left_nav_arro_m.jpg" alt="" width="13" height="12" /></td>
+                         <td height="25"><a href="break_bulk.php" class="txt_nav">Break bulk</a></td>
+                       </tr>
+                       <tr>
+                         <td height="25"><img src="images/left_nav_arro_m.jpg" alt="" width="13" height="12" /></td>
+                         <td height="25"><a href="project_forwarding.php" class="txt_nav">Project Forwarding</a></td>
+                       </tr>
+                       <tr>
+                         <td height="25"><img src="images/left_nav_arro_m.jpg" alt="" width="13" height="12" /></td>
+                         <td height="25"><a href="hazardous_cargo.php" class="txt_nav">Hazardous Cargo</a></td>
+                       </tr>
+                       <tr>
+                         <td height="25"><img src="images/left_nav_arro_m.jpg" alt="" width="13" height="12" /></td>
+                         <td height="25"><a href="transportation.php" class="txt_nav">Transportation</a></td>
+                       </tr>
+                       <tr>
+                         <td height="25"><img src="images/left_nav_arro_m.jpg" alt="" width="13" height="12" /></td>
+                         <td height="25"><a href="warehousing.php" class="txt_nav">Warehousing</a></td>
+                       </tr>
+                       <tr>
+                         <td height="25"><img src="images/left_nav_arro_m.jpg" alt="" width="13" height="12" /></td>
+                         <td height="25"><a href="custom_clearnce.php" class="txt_nav">Custom Clearance</a></td>
+                       </tr>
+                       
+                       <!--<tr>
+                         <td height="25"><img src="images/left_nav_arro_m.jpg" alt="" width="13" height="12" /></td>
+                         <td height="25"><a href="value_added_services.php" class="txt_nav">Value Added Services</a></td>
+                       </tr>
+                       <tr>
+                         <td height="20" align="center"><img src="images/left_nav_arro_sub.jpg" alt="" width="6" height="7" /></td>
+                         <td height="20"><a href="door_delivery.php" class="txt_nav">Door to Door Delivery</a></td>
+                       </tr>
+                       <tr>
+                         <td height="20" align="center"><img src="images/left_nav_arro_sub.jpg" alt="" width="6" height="7" /></td>
+                         <td height="20"><a href="exhibition_cargo.php" class="txt_nav">Exhibition Cargo</a></td>
+                       </tr>
+                       <tr>
+                         <td height="20" align="center"><img src="images/left_nav_arro_sub.jpg" alt="" width="6" height="7" /></td>
+                         <td height="20"><a href="cargo_insurance.php" class="txt_nav">Cargo Insurance</a></td>
+                       </tr>-->
+                     </table>
+			       </div>
+				    <div class="left_nav_bot"></div>
+				</div>			    <div class="inner_right"><span class="blue_bold">About Us </span><br />
+			        <br />
+		          Established in the year 2009 by a dynamic entrepreneurs, <strong>Parvender Singh</strong>, GGI Shipping Agency is a one-stop integrated logistics and transportation service provider, offering a comprehensive range of high quality solutions in shipping transportation segment. With a wealth of experience and expertise in various facets of shipping transportation segment, GGI Shipping is ideally placed to offer solutions that will give our clients a competitive advantage in navigating complex global shipping environment. <br />
+	                <br />
+                  Our solutions touches upon a host of areas ranging from Transport Operations to Freight booking, Project Forwarding, Documentation and shipment of Hazardous cargo, etc. Leveraging our good network of contacts, we are well positioned to provide our clients easy access to international ship owners, operators, and charters. This in turn helps our clients to extract greater cost-efficiencies in freight, etc. <br />
+                  <br />
+                  In line with our resolve to stay a step ahead of competition, our team keeps track of market trends and conditions and focus on keeping our customers satisfied in every aspect of our services. It is this spirit of commitment and our flexible approach that makes us an ideal source you can rely upon for the success of your requirements.<br />
+                  <br />
+                  Looking ahead, we aim to carve a niche for ourselves as a market leader that&rsquo;s recognized for providing result-oriented customized solutions <br />
+                  <br />
+                  <br />
+			      <br />
+			    </div>
+	    </div>
+					
+					
+       <div class="clear"></div>
+	  <div class="footer">
+					  <div class="foot_left">Copyright 2010-11, GGI Shipping. All Rights Reserved.</div>
+					   <div class="foot_right">Website design by:<a href="http://adroitinfoactive.net" target="_blank">ADROIT</a></div>
+	      </div>	  <div class="clear"></div>
+	  </div>
+</body>
+
+</html>
+

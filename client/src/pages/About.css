@@ -1,0 +1,36 @@
+.page-header {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+}
+
+.experience-badge {
+  text-align: center;
+  z-index: 10;
+}
+
+.letter-spacing {
+  letter-spacing: 2px;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: bold;
+}

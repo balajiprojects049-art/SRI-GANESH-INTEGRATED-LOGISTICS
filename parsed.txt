@@ -1,0 +1,344 @@
+﻿::GGI Shipping Agency (About Us)  ::
+
+
+ 
+      
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]=["images/head_1.jpg", "", ""] //plain image syntax
+fadeimages[1]=["images/head_2.jpg", "", ""] //plain image syntax
+fadeimages[2]=["images/head_3.jpg", "", ""] //plain image syntax
+fadeimages[2]=["images/head_4.jpg", "", ""] //plain image syntax
+var fadebgcolor="#ffffff"
+
+////NO need to edit beyond here/////////////
+ 
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+ 
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+ 
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p')
+else
+document.write('')
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+ 
+function fadepic(obj){
+if (obj.degree'
+slideHTML+=''
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+=''
+picobj.innerHTML=slideHTML
+}
+ 
+ 
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex
+
+
+      
+	   
+
+
+
+	    
+
+		
+
+	Home
+
+	About Us
+
+		
+
+			Cameras
+
+					
+
+						Nikon
+
+						Minolta
+
+						Pentax
+
+					
+
+			
+
+			Lenses
+
+					
+
+						Wide Angle
+
+						Standard
+
+						Telephoto
+
+						Zoom
+
+							
+
+								35mm to 125mm
+
+								50mm to 250mm
+
+								125mm to 500mm
+
+							
+
+						
+
+						Mirror
+
+						Non standard
+
+							
+
+								Bayonet mount
+
+								Screw mount
+
+							
+
+						
+
+					
+
+			
+
+			Vision / Mission / Values
+
+			Profile
+
+			Awards / Recognition
+
+			Social Contribution
+
+			Client Testimonials
+
+		-->
+
+	
+
+	Our Services
+
+		
+
+			Freight Forwarding
+
+					
+
+						Sea Freight
+
+						Air Freight
+
+					
+
+			
+
+			Break Bulk
+
+			Project Forwarding
+
+			Hazardous Cargo
+
+			Transportation
+
+			Warehousing
+
+			Customs Clearance
+
+			Value Added Services
+
+					
+
+						Door to Door Delivery
+
+						Exhibition Cargo
+
+						Cargo Insurance
+
+					
+
+			-->
+
+		
+
+	
+
+	Value Added Info
+
+		
+
+			Container Specification
+
+		
+
+	
+
+	Testimonials
+
+	Enquiry Form
+
+	Contact Us
+
+
+
+                        
+
+  
+  
+   
+
+					 
+                     
+                     
+                     
+                     
+                    	    
+		
+		
+		
+		
+			   About Us
+
+		       A total one-resource integrated logistics and transportation service provider, GGI Shipping Agency offers a wide range of quality solutions in areas ranging from Transport Operations to Freight booking, Project Forwarding ,Documentation and shipment of Hazardous cargo, etc.-->
+		 
+		  
+	      -->
+		    
+			 
+	      -->
+        
+				
+				
+			   
+			    
+			     
+
+			      Our Services
+			       
+			         
+                       
+                         
+                         Freight Forwarding
+                       
+                       
+                         
+                         Sea Freight
+                       
+                       
+                         
+                         Air Freight
+                       
+                       
+                         
+                         Break bulk
+                       
+                       
+                         
+                         Project Forwarding
+                       
+                       
+                         
+                         Hazardous Cargo
+                       
+                       
+                         
+                         Transportation
+                       
+                       
+                         
+                         Warehousing
+                       
+                       
+                         
+                         Custom Clearance
+                       
+                       
+                       
+                         
+                         Value Added Services
+                       
+                       
+                         
+                         Door to Door Delivery
+                       
+                       
+                         
+                         Exhibition Cargo
+                       
+                       
+                         
+                         Cargo Insurance
+                       -->
+                     
+			       
+				    
+							    About Us 
+			        
+		          Established in the year 2009 by a dynamic entrepreneurs, Parvender Singh, GGI Shipping Agency is a one-stop integrated logistics and transportation service provider, offering a comprehensive range of high quality solutions in shipping transportation segment. With a wealth of experience and expertise in various facets of shipping transportation segment, GGI Shipping is ideally placed to offer solutions that will give our clients a competitive advantage in navigating complex global shipping environment. 
+	                
+                  Our solutions touches upon a host of areas ranging from Transport Operations to Freight booking, Project Forwarding, Documentation and shipment of Hazardous cargo, etc. Leveraging our good network of contacts, we are well positioned to provide our clients easy access to international ship owners, operators, and charters. This in turn helps our clients to extract greater cost-efficiencies in freight, etc. 
+                  
+                  In line with our resolve to stay a step ahead of competition, our team keeps track of market trends and conditions and focus on keeping our customers satisfied in every aspect of our services. It is this spirit of commitment and our flexible approach that makes us an ideal source you can rely upon for the success of your requirements.
+                  
+                  Looking ahead, we aim to carve a niche for ourselves as a market leader that&rsquo;s recognized for providing result-oriented customized solutions 
+                  
+                  
+			      
+			    
+	    
+					
+					
+       
+	  
+					  Copyright 2010-11, GGI Shipping. All Rights Reserved.
+					   Website design by:ADROIT
+	      	  
+	  
+
+
+
+
+

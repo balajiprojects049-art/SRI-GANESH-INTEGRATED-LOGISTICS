@@ -1,0 +1,125 @@
+/* ── Contact Info Card ────────────────────────────────── */
+.contact-info-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  transition: background 0.2s;
+}
+
+.contact-info-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.contact-info-item:first-child {
+  padding-top: 0;
+}
+
+.contact-icon-box {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: var(--accent-color);
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-info-item:hover .contact-icon-box {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info-text h4 {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-color);
+  margin: 0 0 0.3rem 0;
+}
+
+.contact-info-text p,
+.contact-info-text a {
+  font-size: 0.97rem;
+  color: var(--text-muted, #555);
+  margin: 0.1rem 0;
+  line-height: 1.55;
+  text-decoration: none;
+}
+
+.contact-info-text a:hover {
+  color: var(--accent-color);
+}
+
+/* ── Office Location Cards ────────────────────────────── */
+.office-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  border: 1px solid rgba(0,0,0,0.07);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.office-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+}
+
+.office-card-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.office-card-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  background: var(--accent-color);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.office-card-row {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  margin-bottom: 0.55rem;
+  font-size: 0.875rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.office-card-row svg {
+  color: var(--accent-color);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.office-card-row a {
+  color: #555;
+  text-decoration: none;
+}
+
+.office-card-row a:hover {
+  color: var(--accent-color);
+}
+
+.office-card-phone {
+  font-weight: 700;
+  color: var(--primary-color) !important;
+}
