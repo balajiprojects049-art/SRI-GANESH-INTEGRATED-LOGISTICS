@@ -10,56 +10,56 @@ export default function Services() {
       title: "Reefer Containers",
       icon: <Truck size={40} />,
       desc: "Pan India movement of temperature-sensitive products including pharmaceuticals, dairy, and frozen foods. Equipped with advanced temperature control maintaining -25°C to +25°C.",
-      bg: "/Gemini_Generated_Image_uq4cbuuq4cbuuq4c.png"
+      bg: "/reefer-containers-card.png"
     },
     {
       id: "regular-containers",
       title: "Regular Containers",
       icon: <Package size={40} />,
       desc: "Reliable and cost-effective Pan India movement of goods using 20ft and 40ft dry containers for FMCG, textiles, and general merchandise.",
-      bg: "/Gemini_Generated_Image_3wo3ky3wo3ky3wo3.png"
+      bg: "/regular-containers-card.png"
     },
     {
       id: "hazardous-cargo",
       title: "Hazardous Cargo",
       icon: <AlertTriangle size={40} />,
       desc: "Safe and compliant transportation of hazardous materials across India. Full compliance with IMDG and ADR standards with specially trained handling crews.",
-      bg: "/Gemini_Generated_Image_x9eyb1x9eyb1x9ey.png"
+      bg: "/hazardous-cargo-card.png"
     },
     {
       id: "iso-tankers",
       title: "ISO Tankers",
       icon: <Ship size={40} />,
       desc: "Pan India transportation of bulk liquids and gases using certified ISO tankers. Dedicated trailer movements from port to factory ensure safe, contamination-free handling.",
-      bg: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
+      bg: "/iso-tankers-card.png"
     },
     {
       id: "liquid-tankers",
       title: "Liquid Tankers",
       icon: <Truck size={40} />,
       desc: "Efficient movement of food-grade and chemical-grade liquids including edible oils and beverages. Specialized tankers ensure hygienic and timely delivery.",
-      bg: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=2070&auto=format&fit=crop"
+      bg: "/liquid-tankers-card.png"
     },
     {
       id: "break-bulk",
       title: "Break Bulk Cargo",
       icon: <Package size={40} />,
       desc: "Seamless handling and transportation of non-containerized cargo like steel, machinery, and project goods requiring specialized loading and security.",
-      bg: "https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=2070&auto=format&fit=crop"
+      bg: "/break-bulk-card.png"
     },
     {
       id: "odc-cargo",
       title: "Out of Dimension Cargo (ODC)",
       icon: <Truck size={40} />,
       desc: "Specialized movement of over-dimensional and heavy-lift cargo including infrastructure and power plant equipment, managed by a dedicated ODC team.",
-      bg: "https://images.unsplash.com/photo-1494412574743-01947f15b6b7?q=80&w=2070&auto=format&fit=crop"
+      bg: "/odc-cargo-card.png"
     },
     {
       id: "freight-forwarding",
       title: "Freight Forwarding",
       icon: <Globe size={40} />,
       desc: "End-to-end management of domestic and international shipments covering air freight, sea freight, and last-mile delivery with single-window support.",
-      bg: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop"
+      bg: "/freight-forwarding-card.png"
     }
   ];
 

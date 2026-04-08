@@ -11,42 +11,42 @@ export default function Home() {
   const tabData = {
     "Reefer Containers": {
       route: "/services/reefer-containers",
-      image: "/Gemini_Generated_Image_8yyfqr8yyfqr8yyf.png",
+      image: "/reefer-containers-home.png",
       text: "We provide PAN India movement of temperature-sensitive products, ensuring seamless and efficient cold logistics. Our services cater to industries requiring precise temperature control, including pharmaceuticals, dairy, frozen foods, seafood, meat, and other perishable goods."
     },
     "Regular Containers": {
       route: "/services/regular-containers",
-      image: "/Gemini_Generated_Image_5cbiyz5cbiyz5cbi.png",
+      image: "/regular-containers-home.png",
       text: "We provide reliable and cost-effective PAN India movement of goods using regular containers. Our services cater to a wide range of industries, including FMCG, textiles, electronics, automobile parts, and general merchandise."
     },
     "Hazardous Cargo": {
       route: "/services/hazardous-cargo",
-      image: "/Gemini_Generated_Image_fbi3okfbi3okfbi3.png",
+      image: "/hazardous-cargo-home.png",
       text: "We provide safe and compliant transportation of hazardous materials across India - including chemicals, flammable substances, industrial gases, and other dangerous goods - adhering to all regulatory safety standards."
     },
     "ISO Tankers": {
       route: "/services/iso-tankers",
-      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop",
+      image: "/iso-tankers-home.png",
       text: "We provide Pan India transportation of bulk liquids and gases using certified ISO tank containers. Ensuring safe and contamination-free movement, our services cater to chemicals, petrochemicals, and food-grade liquids."
     },
     "Liquid Tankers": {
       route: "/services/liquid-tankers",
-      image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=800&auto=format&fit=crop",
+      image: "/liquid-tankers-home.png",
       text: "We provide efficient and reliable transportation of liquid cargo across India, specialized in edible oils, beverages, chemicals, and water - ensuring hygienic, leak-proof, and timely delivery from source to destination."
     },
     "Break Bulk Cargo": {
       route: "/services/break-bulk-cargo",
-      image: "https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=800&auto=format&fit=crop",
+      image: "/break-bulk-home.png",
       text: "We offer seamless handling and transportation of break bulk cargo managing goods that cannot be containerized due to their size, weight, or nature. We cater to industries like steel, construction, and large machinery."
     },
     "ODC Cargo": {
       route: "/services/odc-cargo",
-      image: "https://images.unsplash.com/photo-1494412574743-01947f15b6b7?q=80&w=800&auto=format&fit=crop",
+      image: "/odc-cargo-home.png",
       text: "We specialize in the movement of over-dimensional and heavy-lift cargo across India (ODC). Our services cater to heavy infrastructure, power, oil & gas, and mechanical engineering projects."
     },
     "Freight Forwarding": {
       route: "/services/freight-forwarding",
-      image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=800&auto=format&fit=crop",
+      image: "/freight-forwarding-home.png",
       text: "We provide end-to-end freight forwarding services, managing the complete movement of goods across domestic and international routes, covering air freight, sea freight, and last-mile delivery."
     }
   };
@@ -189,14 +189,14 @@ export default function Home() {
 
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { title: "Reefer Containers", icon: <Truck size={32} />, desc: "Pan India movement of temperature-sensitive products, ensuring seamless and efficient cold chain logistics.", image: "/Gemini_Generated_Image_n6bbjqn6bbjqn6bb.png" },
-              { title: "Regular Containers", icon: <Package size={32} />, desc: "Reliable and cost-effective Pan India movement of goods using standard dry containers.", image: "/Gemini_Generated_Image_3wo3ky3wo3ky3wo3.png" },
-              { title: "Hazardous Cargo", icon: <ShieldCheck size={32} />, desc: "Safe, secure, and fully compliant transportation of hazardous materials including port-to-factory movements.", image: "/Gemini_Generated_Image_x9eyb1x9eyb1x9ey.png" },
-              { title: "ISO Tankers", icon: <Ship size={32} />, desc: "Pan India transportation of bulk liquids and gases using internationally certified ISO tankers." },
-              { title: "Liquid Tankers", icon: <Truck size={32} />, desc: "Efficient and reliable transportation of edible oils, chemicals, and industrial liquids via specialized tankers." },
-              { title: "Break Bulk Cargo", icon: <Package size={32} />, desc: "Handling and transportation of non-containerized goods that require specialized loading and secure transit." },
-              { title: "ODC Cargo", icon: <Truck size={32} />, desc: "Expertise in moving over-dimensional and heavy-lift cargo that exceeds standard size and weight limits." },
-              { title: "Freight Forwarding", icon: <Globe size={32} />, desc: "End-to-end management of domestic and international shipments via air/sea with single-window support." }
+              { title: "Reefer Containers", icon: <Truck size={32} />, desc: "Pan India movement of temperature-sensitive products, ensuring seamless and efficient cold chain logistics.", image: "/reefer-containers-card.png" },
+              { title: "Regular Containers", icon: <Package size={32} />, desc: "Reliable and cost-effective Pan India movement of goods using standard dry containers.", image: "/regular-containers-card.png" },
+              { title: "Hazardous Cargo", icon: <ShieldCheck size={32} />, desc: "Safe, secure, and fully compliant transportation of hazardous materials including port-to-factory movements.", image: "/hazardous-cargo-card.png" },
+              { title: "ISO Tankers", icon: <Ship size={32} />, desc: "Pan India transportation of bulk liquids and gases using internationally certified ISO tankers.", image: "/iso-tankers-card.png" },
+              { title: "Liquid Tankers", icon: <Truck size={32} />, desc: "Efficient and reliable transportation of edible oils, chemicals, and industrial liquids via specialized tankers.", image: "/liquid-tankers-card.png" },
+              { title: "Break Bulk Cargo", icon: <Package size={32} />, desc: "Handling and transportation of non-containerized goods that require specialized loading and secure transit.", image: "/break-bulk-card.png" },
+              { title: "ODC Cargo", icon: <Truck size={32} />, desc: "Expertise in moving over-dimensional and heavy-lift cargo that exceeds standard size and weight limits.", image: "/odc-cargo-card.png" },
+              { title: "Freight Forwarding", icon: <Globe size={32} />, desc: "End-to-end management of domestic and international shipments via air/sea with single-window support.", image: "/freight-forwarding-card.png" }
             ].map((service, idx) => (
               <motion.div key={idx} whileHover={{ y: -10 }} className="card service-card">
                 <div className="card-icon">{service.icon}</div>

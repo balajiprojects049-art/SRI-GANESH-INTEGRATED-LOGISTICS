@@ -7,7 +7,7 @@ const servicesData = {
   "reefer-containers": {
     title: "Reefer Containers",
     icon: <Thermometer size={48} />,
-    image: "/Gemini_Generated_Image_uq4cbuuq4cbuuq4c.png",
+    image: "/reefer-containers-detail.png",
     subtitle: "Pan India temperature-controlled cold chain logistics specialist.",
     description: "We provide PAN India movement of temperature-sensitive products, ensuring seamless and efficient cold logistics. Our services cater to industries requiring precise temperature control, including pharmaceuticals, dairy, frozen foods, seafood, meat, and other perishable goods.",
     features: [
@@ -23,7 +23,7 @@ const servicesData = {
   "regular-containers": {
     title: "Regular Containers",
     icon: <Package size={48} />,
-    image: "/Gemini_Generated_Image_3qui9k3qui9k3qui.png",
+    image: "/regular-containers-detail.png",
     subtitle: "Reliable and cost-effective Pan India container movement.",
     description: "We provide reliable and cost-effective PAN India movement of goods using regular containers. Our services cater to a wide range of industries, including FMCG, textiles, electronics, automobile parts, and general merchandise.",
     features: [
@@ -39,7 +39,7 @@ const servicesData = {
   "hazardous-cargo": {
     title: "Hazardous Cargo",
     icon: <ShieldCheck size={48} />,
-    image: "/Gemini_Generated_Image_wugz9twugz9twugz.png",
+    image: "/hazardous-cargo-detail.png",
     subtitle: "Safe and compliant transportation of dangerous goods.",
     description: "We provide safe and compliant transportation of hazardous materials across India, including dedicated trailer movements from port to factory and factory to port. Adhering to all regulatory guidelines and safety standards, our services cater to industries dealing with chemicals, flammable substances, industrial gases, and other dangerous goods.",
     features: [
@@ -55,7 +55,7 @@ const servicesData = {
   "iso-tankers": {
     title: "ISO Tankers",
     icon: <Ship size={48} />,
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop",
+    image: "/iso-tankers-detail.png",
     subtitle: "Pan India transportation of bulk liquids and gases.",
     description: "We provide Pan India transportation of bulk liquids and gases using certified ISO tank containers. We provide dedicated trailer movements from port to factory and factory to port, ensuring safe and contamination-free movement. Our services cater to chemicals, petrochemicals, and food-grade liquids.",
     features: [
@@ -71,7 +71,7 @@ const servicesData = {
   "liquid-tankers": {
     title: "Liquid Tankers",
     icon: <Truck size={48} />,
-    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=2070&auto=format&fit=crop",
+    image: "/liquid-tankers-detail.png",
     subtitle: "Efficient transport for edible oils and chemical liquids.",
     description: "We provide efficient and reliable transportation of liquid cargo across India, specialized in edible oils, beverages, chemicals, and water. Our fleet of specialized tankers is designed to ensure hygienic, leak-proof, and timely delivery from source to destination.",
     features: [
@@ -87,7 +87,7 @@ const servicesData = {
   "break-bulk-cargo": {
     title: "Break Bulk Cargo",
     icon: <Package size={48} />,
-    image: "https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=2070&auto=format&fit=crop",
+    image: "/break-bulk-detail.png",
     subtitle: "Expert handling of oversized and non-containerized cargo.",
     description: "We offer seamless handling and transportation of break bulk cargo — managing goods that cannot be containerized due to their size, weight, or nature. We ensure efficient loading, secure transit, and cost-effective operations for non-standard shipments. We cater to industries like steel, construction, and large machinery.",
     features: [
@@ -103,7 +103,7 @@ const servicesData = {
   "odc-cargo": {
     title: "ODC Cargo",
     icon: <Truck size={48} />,
-    image: "https://images.unsplash.com/photo-1494412574743-01947f15b6b7?q=80&w=2070&auto=format&fit=crop",
+    image: "/odc-cargo-detail.png",
     subtitle: "Advanced logistics for over-dimensional heavy cargo.",
     description: "We specialize in the movement of over-dimensional and heavy-lift cargo across India (ODC). With a dedicated team, we manage complex routes, technical clearances, and specialized specialized trailers to move oversized items that exceed standard container dimensions. Our services cater to heavy infrastructure, power, oil & gas, and mechanical engineering projects.",
     features: [
@@ -119,7 +119,7 @@ const servicesData = {
   "freight-forwarding": {
     title: "Freight Forwarding",
     icon: <Globe size={48} />,
-    image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop",
+    image: "/freight-forwarding-detail.png",
     subtitle: "Global multimodal logistics backing your business expansion.",
     description: "We provide comprehensive freight forwarding services across domestic and international trade routes. Combining sea, air, and road transport, we offer end-to-end management of shipments, including customs clearance, documentation, and last-mile delivery, providing our clients with single-window logistics support.",
     features: [
