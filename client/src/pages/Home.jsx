@@ -277,20 +277,20 @@ export default function Home() {
       <section className="py-16 bg-light">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="section-title">Our <span className="text-accent">Locations</span></h2>
-            <p className="text-muted">Serving you across major Indian cities and ports</p>
+            <h2 className="section-title">Our <span className="text-accent">Offices</span></h2>
+            <p className="text-muted">Pan-India presence to serve you better</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { city: "Hyderabad", label: "Head Office", address: "Plot No:10, Aparajitha Colony, Near Meridian Plaza, Ameerpet, Hyderabad - 5000 016", phone: "+91 98493 56197", email: "parvender@ggishipping.com" },
-              { city: "Vishakapatnam", label: "Branch Office", address: "10-37-27, Rich House, Ram Nagar, Vishakapatnam - 530002, Andhra Pradesh", phone: "+91 90006 01100", email: "parvender@ggishipping.com" },
-              { city: "Krishnapatinam", label: "Branch Office", address: "No. 306, 3rd Floor, DNJ Commercial Complex, Gopala Puram Village, Muthukur Mandal, Nellore, AP - 524344", phone: "", email: "parvender@ggishipping.com" },
-              { city: "Mumbai", label: "Branch Office", address: "54, Shalaka, D. N Nagar, Andheri (W), Mumbai - 400 053", phone: "+91 90000 01007 / +91 93228 89957", email: "parvender@ggishipping.com" },
-              { city: "Chennai", label: "Branch Office", address: "Ramarau Buildings, 3rd Floor, 299/144, Thambuchetty Street, Chennai - 600001", phone: "", email: "parvender@ggishipping.com" },
-              { city: "Delhi", label: "Branch Office", address: "A-111, Pariyavaran Complex, Neb Sari Road, New Delhi - 30", phone: "+91 90000 01007 / +91 98112 09066", email: "parvender@ggishipping.com" },
-              { city: "Ahmedabad", label: "Branch Office", address: "Block No-31A, 3rd Floor, Prime Plaza, Judge Bunglow Road, Ahmedabad", phone: "+91 90000 01007 / +91 93755 31688", email: "parvender@ggishipping.com" },
-              { city: "Gujarat (Kandala)", label: "Branch Office", address: "12, 275/12B, Gandhi Dham, Gujarat", phone: "+91 90000 01007", email: "parvender@ggishipping.com" },
-              { city: "Bangalore", label: "Branch Office", address: "2555, 13th Mai, 9th Cross, E Block, Sahakarnagar, Bangalore - 560092", phone: "+91 91000 08009", email: "parvender@ggishipping.com" },
+              { city: "Hyderabad", label: "Head Office", address: "6-3-852/2/B4, Plot No. 10, Aparajitha Colony, Ameerpet, Hyderabad, Telengana - 500016.", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
+              { city: "Vishakapatnam", label: "Branch Office", address: "10-37-27, Rich House, Ram Nagar, Vishakapatnam - 530002, Andhra Pradesh, India", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
+              { city: "Mumbai", label: "Branch Office", address: "54, Shalaka, D. N Nagar, Andheri (W), Mumbai - 400 053", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
+              { city: "Chennai", label: "Branch Office", address: "Ramarau Buildings, 3rd Floor, 299/144, Thambuchetty Street, Chennai - 600001", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
+              { city: "Bangalore", label: "Branch Office", address: "2555, 13th Mai, 9th Cross, E Nagar, Sahakarnagar, Bangalore - 560092", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
+              { city: "Krishnapatinam", label: "Branch Office", address: "No. 306, 3rd Floor, DNJ Commercial Complex, Gopala Puram Village, Muthukur Mandal, Nellore, AP - 524344", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
+              { city: "Delhi", label: "Branch Office", address: "A-111, Pariyavaran Complex, Neb Sari Road, New Delhi - 30", phone: "9494922080, 98112 09066", email: "contact.sgilogistics@gmail.com" },
+              { city: "Ahmedabad", label: "Branch Office", address: "Block No-31A, 3rd Floor, Prime Plaza, Judge Bunglow Road, Ahmedabad", phone: "9494922080, 93755 31688", email: "contact.sgilogistics@gmail.com" },
+              { city: "Gujarat (Kandala)", label: "Branch Office", address: "12, 275/12B, Gandhi Dham, Gujarat", phone: "9494922080", email: "contact.sgilogistics@gmail.com" },
             ].map((loc, i) => (
               <motion.div key={i} whileHover={{ y: -6 }} className="office-card">
                 <div className="office-card-title">
