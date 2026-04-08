@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import './Contact.css';
 
 export default function Contact() {
@@ -72,6 +73,11 @@ export default function Contact() {
 
   return (
     <div className="contact-page bg-light">
+      <Helmet>
+        <title>Contact Us - Sri Ganesh Integrated Logistics | Available 24/7</title>
+        <meta name="description" content="Get in touch with Sri Ganesh Integrated Logistics. Reach out to our offices in Hyderabad, Mumbai, Chennai, and more for reliable Pan India logistics support." />
+        <link rel="canonical" href="https://www.sgilogistics.com/contact" />
+      </Helmet>
       <section className="page-header py-56 text-center text-light relative" style={{ backgroundImage: "url('/Gemini_Generated_Image_29yydp29yydp29yy.png')", backgroundSize: 'cover', backgroundPosition: 'center 15%' }}>
         <div className="absolute inset-0 bg-primary opacity-80 z-0"></div>
         <div className="container mt-8 relative z-10">

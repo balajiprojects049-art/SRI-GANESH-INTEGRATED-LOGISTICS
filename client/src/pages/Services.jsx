@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Truck, Plane, Ship, Package, AlertTriangle, Warehouse, FileCheck, ArrowRight, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './Services.css';
 
 export default function Services() {
@@ -65,6 +66,11 @@ export default function Services() {
 
   return (
     <div className="services-page">
+      <Helmet>
+        <title>Our Logistics Services - Sri Ganesh Integrated Logistics</title>
+        <meta name="description" content="Explore our range of 8 core integrated logistics solutions including Reefer Containers, Hazardous Cargo, ISO Tankers, ODC Cargo, and Freight Forwarding." />
+        <link rel="canonical" href="https://www.sgilogistics.com/services" />
+      </Helmet>
       <section className="page-header py-24 text-center text-light relative" style={{ backgroundImage: "url('/Gemini_Generated_Image_tfd595tfd595tfd5.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="absolute inset-0 bg-primary opacity-80 z-0"></div>
         <div className="container mt-8 relative z-10">

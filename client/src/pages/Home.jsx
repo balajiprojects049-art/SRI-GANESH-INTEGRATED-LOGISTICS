@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Globe, ShieldCheck, Clock, Truck, Ship, Plane, Star, Package, Warehouse, MapPin, Phone, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './Home.css';
 import './Contact.css';
 
@@ -63,6 +64,11 @@ export default function Home() {
 
   return (
     <div className="home-page">
+      <Helmet>
+        <title>Sri Ganesh Integrated Logistics - 20+ Years in Pan India Transportation</title>
+        <meta name="description" content="One-stop integrated transportation service provider delivering reliable solutions across Pan India. Specialists in Reefer, Hazardous, and ISO Tankers cargo." />
+        <link rel="canonical" href="https://www.sgilogistics.com" />
+      </Helmet>
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-overlay"></div>
@@ -287,10 +293,6 @@ export default function Home() {
               { city: "Mumbai", label: "Branch Office", address: "54, Shalaka, D. N Nagar, Andheri (W), Mumbai - 400 053", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
               { city: "Chennai", label: "Branch Office", address: "Ramarau Buildings, 3rd Floor, 299/144, Thambuchetty Street, Chennai - 600001", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
               { city: "Bangalore", label: "Branch Office", address: "2555, 13th Mai, 9th Cross, E Nagar, Sahakarnagar, Bangalore - 560092", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
-              { city: "Krishnapatinam", label: "Branch Office", address: "No. 306, 3rd Floor, DNJ Commercial Complex, Gopala Puram Village, Muthukur Mandal, Nellore, AP - 524344", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
-              { city: "Delhi", label: "Branch Office", address: "A-111, Pariyavaran Complex, Neb Sari Road, New Delhi - 30", phone: "9494922080, 98112 09066", email: "contact.sgilogistics@gmail.com" },
-              { city: "Ahmedabad", label: "Branch Office", address: "Block No-31A, 3rd Floor, Prime Plaza, Judge Bunglow Road, Ahmedabad", phone: "9494922080, 93755 31688", email: "contact.sgilogistics@gmail.com" },
-              { city: "Gujarat (Kandala)", label: "Branch Office", address: "12, 275/12B, Gandhi Dham, Gujarat", phone: "9494922080", email: "contact.sgilogistics@gmail.com" },
             ].map((loc, i) => (
               <motion.div key={i} whileHover={{ y: -6 }} className="office-card">
                 <div className="office-card-title">

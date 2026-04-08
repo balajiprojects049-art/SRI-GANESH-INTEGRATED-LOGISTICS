@@ -1,10 +1,16 @@
 import { motion } from 'framer-motion';
 import { Target, Eye, Award, CheckCircle, ShieldCheck } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import './About.css';
 
 export default function About() {
   return (
     <div className="about-page">
+      <Helmet>
+        <title>About Us - Sri Ganesh Integrated Logistics | Established 2001</title>
+        <meta name="description" content="Discover the journey of Sri Ganesh Integrated Logistics. From a focused transport venture in 2001 to a leading integrated logistics provider across India." />
+        <link rel="canonical" href="https://www.sgilogistics.com/about" />
+      </Helmet>
       {/* Page Header */}
       <section className="page-header py-24 text-center text-light relative" style={{ backgroundImage: "url('/Gemini_Generated_Image_qn8unaqn8unaqn8u.png')", backgroundSize: 'cover', backgroundPosition: 'center 25%' }}>
         <div className="absolute inset-0 bg-primary opacity-80 z-0"></div>

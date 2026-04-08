@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Truck, Ship, ShieldCheck, Package, Globe, ArrowRight, CheckCircle, Clock, Thermometer } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import './ServiceDetail.css';
 
 const servicesData = {
@@ -149,6 +150,11 @@ export default function ServiceDetail() {
 
   return (
     <div className="service-detail-page">
+      <Helmet>
+        <title>{service.title} Services - Sri Ganesh Integrated Logistics</title>
+        <meta name="description" content={service.subtitle} />
+        <link rel="canonical" href={`https://www.sgilogistics.com/services/${id}`} />
+      </Helmet>
       {/* Hero Section */}
       <section className="sd-hero" style={{ backgroundImage: `url(${service.image})` }}>
         <div className="sd-hero-overlay"></div>

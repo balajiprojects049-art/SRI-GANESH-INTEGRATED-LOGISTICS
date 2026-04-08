@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Plane, Ship, Truck, Snowflake } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import './Quote.css';
 
 export default function Quote() {
@@ -38,6 +39,11 @@ export default function Quote() {
 
   return (
     <div className="quote-page bg-light py-24">
+      <Helmet>
+        <title>Get a Quote - Sri Ganesh Integrated Logistics</title>
+        <meta name="description" content="Request a personalized logistics quote from Sri Ganesh Integrated Logistics. Expert planning for Reefer, Hazardous, ISO Tankers, and multimodal transport." />
+        <link rel="canonical" href="https://www.sgilogistics.com/quote" />
+      </Helmet>
       <div className="container max-w-4xl">
         <motion.div initial={{ y: -30, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="text-center mb-12">
           <h1 className="text-primary text-5xl mb-4">Request a <span className="text-accent">Quote</span></h1>
