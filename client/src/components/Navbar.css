@@ -33,26 +33,37 @@
   line-height: 1;
 }
 
+/* SRI GANESH Main Logo Title */
 .logo-text span:first-child {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: var(--primary-color);
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  color: #1a1a5e;
+  /* Navy blue as in image */
+  line-height: 0.85;
+  text-transform: uppercase;
 }
 
+/* INTEGRATED LOGISTICS Subline */
 .logo-sub {
-  font-size: 0.7rem;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 0.85rem;
+  font-style: italic;
   letter-spacing: 2px;
   color: var(--accent-color);
-  font-weight: 600;
+  /* Bright Red */
+  font-weight: 700;
+  margin-top: 1px;
+  text-transform: uppercase;
 }
 
 .brand-logo {
   height: 60px;
   width: auto;
   transition: var(--transition);
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .scrolled .brand-logo {
@@ -155,7 +166,7 @@
   font-family: var(--font-heading);
   font-size: 1.2rem;
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .mobile-menu a:last-child {
