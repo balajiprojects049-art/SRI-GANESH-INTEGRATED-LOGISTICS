@@ -1,13 +1,27 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Globe, ShieldCheck, Clock, Truck, Ship, Plane, Star, Package, Warehouse, MapPin, Phone, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import './Home.css';
 import './Contact.css';
 
+const heroImages = [
+  '/Hero1.png',
+  '/Hero2.png',
+  '/Hero3.png'
+];
+
 export default function Home() {
   const [activeTab, setActiveTab] = useState("Reefer Containers");
+  const [currentHero, setCurrentHero] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentHero((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
 
   const tabData = {
     "Reefer Containers": {
@@ -72,7 +86,17 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-overlay"></div>
-        <div className="hero-bg" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop')" }}></div>
+        <AnimatePresence mode='wait'>
+          <motion.div 
+            key={currentHero}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.5 }}
+            className="hero-bg" 
+            style={{ backgroundImage: `url(${heroImages[currentHero]})` }}
+          ></motion.div>
+        </AnimatePresence>
 
         <div className="container hero-content">
           <motion.div initial="hidden" animate="visible" variants={containerVariants} className="hero-text">
