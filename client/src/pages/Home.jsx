@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Globe, ShieldCheck, Clock, Truck, Ship, Plane, Star, Package, Warehouse, MapPin, Phone, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -15,6 +15,10 @@ const heroImages = [
 export default function Home() {
   const [activeTab, setActiveTab] = useState("Reefer Containers");
   const [currentHero, setCurrentHero] = useState(0);
+  const [establishedCount, setEstablishedCount] = useState(0);
+  const [yearsCount, setYearsCount] = useState(0);
+  const [hasStatsAnimated, setHasStatsAnimated] = useState(false);
+  const statsSectionRef = useRef(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -22,6 +26,55 @@ export default function Home() {
     }, 5000);
     return () => clearInterval(timer);
   }, []);
+
+  useEffect(() => {
+    if (hasStatsAnimated || !statsSectionRef.current) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setHasStatsAnimated(true);
+        }
+      },
+      { threshold: 0.35 }
+    );
+
+    observer.observe(statsSectionRef.current);
+    return () => observer.disconnect();
+  }, [hasStatsAnimated]);
+
+  useEffect(() => {
+    if (!hasStatsAnimated) return;
+
+    const establishedTarget = 2001;
+    const yearsTarget = 25;
+    const durationMs = 1600;
+    let animationFrameId;
+
+    const animateCount = (startTime) => {
+      const step = (currentTime) => {
+        const progress = Math.min((currentTime - startTime) / durationMs, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+
+        setEstablishedCount(Math.floor(establishedTarget * eased));
+        setYearsCount(Math.floor(yearsTarget * eased));
+
+        if (progress < 1) {
+          animationFrameId = requestAnimationFrame(step);
+          return;
+        }
+
+        setEstablishedCount(establishedTarget);
+        setYearsCount(yearsTarget);
+      };
+
+      animationFrameId = requestAnimationFrame(step);
+    };
+
+    animationFrameId = requestAnimationFrame(animateCount);
+
+    return () => cancelAnimationFrame(animationFrameId);
+  }, [hasStatsAnimated]);
 
   const tabData = {
     "Reefer Containers": {
@@ -31,7 +84,7 @@ export default function Home() {
     },
     "Regular Containers": {
       route: "/services/regular-containers",
-      image: "/regular-containers-home.png",
+      image: "/regular-containers-card.png",
       text: "We provide reliable and cost-effective PAN India movement of goods using regular containers. Our services cater to a wide range of industries, including FMCG, textiles, electronics, automobile parts, and general merchandise."
     },
     "Hazardous Cargo": {
@@ -117,16 +170,24 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="stats-section bg-white py-16">
+      <section ref={statsSectionRef} className="stats-section py-16">
         <div className="container">
-          <div className="flex flex-wrap justify-center gap-8 text-center stats-grid">
-            <motion.div whileHover={{ scale: 1.05 }} className="stat-card p-6 glass shadow-sm rounded-lg">
-              <h2 className="stat-number text-gradient">2001</h2>
-              <p className="stat-label">Established</p>
+          <div className="stats-highlight-grid">
+            <motion.div whileHover={{ y: -4 }} className="stats-highlight-item">
+              <h2 className="stats-highlight-value">{establishedCount}</h2>
+              <p className="stats-highlight-label">Established</p>
             </motion.div>
-            <motion.div whileHover={{ scale: 1.05 }} className="stat-card p-6 glass shadow-sm rounded-lg">
-              <h2 className="stat-number text-gradient">25+</h2>
-              <p className="stat-label">Years Experience</p>
+            <motion.div whileHover={{ y: -4 }} className="stats-highlight-item">
+              <h2 className="stats-highlight-value">{yearsCount}+</h2>
+              <p className="stats-highlight-label">Years of Expertise</p>
+            </motion.div>
+            <motion.div whileHover={{ y: -4 }} className="stats-highlight-item">
+              <h2 className="stats-highlight-value">PAN</h2>
+              <p className="stats-highlight-label">India Coverage</p>
+            </motion.div>
+            <motion.div whileHover={{ y: -4 }} className="stats-highlight-item">
+              <h2 className="stats-highlight-value stats-highlight-value-global">Global</h2>
+              <p className="stats-highlight-label">Freight Network</p>
             </motion.div>
           </div>
         </div>
@@ -137,9 +198,9 @@ export default function Home() {
       <section className="welcome-section py-24 bg-white">
         <div className="container text-center">
           <div style={{ maxWidth: '950px', margin: '0 auto' }}>
-            <h2 className="section-title mb-8">Welcome to <span className="text-accent">Sri Ganesh</span> <span className="text-secondary">Integrated Logistics</span></h2>
+            <h2 className="section-title mb-8 welcome-logo-title"><span className="logo-blue">WELCOME TO </span><span className="logo-red">SRI GANESH</span><span className="logo-blue"> INTEGRATED LOGISTICS</span></h2>
             <div className="welcome-text-centered text-lg leading-relaxed">
-              <p className="mb-6" style={{ fontSize: '1.25rem', color: 'var(--primary-color)', fontWeight: 500 }}>
+              <p className="mb-6 welcome-intro-line" style={{ color: 'var(--primary-color)', fontWeight: 500 }}>
                 Your complete, single-source partner for all logistics and transportation needs across India and beyond.
               </p>
               <p className="mb-6 text-muted">

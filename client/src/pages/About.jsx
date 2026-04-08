@@ -57,10 +57,6 @@ export default function About() {
           </motion.div>
           <motion.div initial={{ x: 30, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} viewport={{ once: true }} className="relative">
             <img src="/Gemini_Generated_Image_qn8unaqn8unaqn8u.png" alt="Cargo Ship" className="rounded-lg shadow-lg" />
-            <div className="experience-badge glass-dark text-light p-6 absolute bottom-[-30px] left-[-30px] rounded-lg shadow-glow">
-              <h3 className="text-4xl text-gradient">20+</h3>
-              <p className="font-bold text-sm uppercase letter-spacing">Years of<br />Excellence</p>
-            </div>
           </motion.div>
         </div>
       </section>

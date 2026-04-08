@@ -47,7 +47,7 @@ export default function Quote() {
       <div className="container max-w-4xl">
         <motion.div initial={{ y: -30, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="text-center mb-12">
           <h1 className="text-primary text-5xl mb-4">Request a <span className="text-accent">Quote</span></h1>
-          <p className="text-muted text-xl">Get accurate pricing for your logistical needs instantly.</p>
+          <p className="text-muted text-xl">Get accurate pricing for your transportation needs instantly.</p>
         </motion.div>
 
         <motion.div initial={{ y: 30, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.1 }} className="card p-8 md:p-12 shadow-lg">

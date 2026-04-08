@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Teko:wght@400;500;600;700&display=swap');
 
 :root {
-  --primary-color: #262668;
+  --primary-color: #25255f;
   /* Deep Navy Blue */
-  --accent-color: #ed2024;
+  --accent-color: #ed1c24;
   /* Vibrant Red */
   --secondary-color: #478cbf;
   /* Soft Blue */
@@ -55,6 +55,7 @@ h6 {
   font-family: var(--font-heading);
   letter-spacing: 0.5px;
   line-height: 1.2;
+  color: var(--primary-color);
 }
 
 h1 {

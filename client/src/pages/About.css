@@ -3,15 +3,6 @@
   padding-bottom: 6rem;
 }
 
-.experience-badge {
-  text-align: center;
-  z-index: 10;
-}
-
-.letter-spacing {
-  letter-spacing: 2px;
-}
-
 .max-w-2xl {
   max-width: 42rem;
 }

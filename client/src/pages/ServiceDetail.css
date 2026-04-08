@@ -79,6 +79,10 @@
   padding: 6rem 0;
 }
 
+.sd-main-content {
+  margin-top: 1.5rem;
+}
+
 .sd-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -101,6 +105,23 @@
   color: var(--text-muted);
   line-height: 1.8;
   font-size: 1rem;
+}
+
+.sd-industry-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.sd-industry-chip {
+  display: block;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--accent-color);
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
 }
 
 /* Checklist */
@@ -135,6 +156,25 @@
   font-size: 0.95rem;
   color: var(--text-dark);
   line-height: 1.6;
+}
+
+.sd-why-choose-note {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(37, 37, 95, 0.15);
+}
+
+.sd-why-choose-note h4 {
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.sd-why-choose-note p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
 }
 
 .check-icon {
@@ -250,11 +290,20 @@
 .sd-why {
   background-color: var(--primary-color);
   padding: 6rem 0;
+  margin-top: 1.75rem;
 }
 
 .sd-why h2 {
   font-size: 2.2rem;
   font-weight: 800;
+}
+
+.sd-why-heading {
+  color: #f3f6ff;
+}
+
+.sd-why-heading .text-accent {
+  color: var(--accent-color);
 }
 
 .sd-why-grid {
@@ -265,6 +314,15 @@
 
 .sd-stat {
   text-align: center;
+}
+
+.sd-stat-value {
+  color: var(--accent-color);
+  font-size: 3rem;
+}
+
+.sd-stat-label {
+  color: #ccd6f0;
 }
 
 .sd-stat h2 {
@@ -295,6 +353,10 @@
   .sd-grid-2 {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .sd-industry-list {
+    grid-template-columns: 1fr;
   }
 
   .sd-why-grid {
