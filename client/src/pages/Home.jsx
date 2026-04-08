@@ -40,7 +40,7 @@ export default function Home() {
       image: "/break-bulk-home.png",
       text: "We offer seamless handling and transportation of break bulk cargo managing goods that cannot be containerized due to their size, weight, or nature. We cater to industries like steel, construction, and large machinery."
     },
-    "ODC Cargo": {
+    "OVER DIMENSION CARGO": {
       route: "/services/odc-cargo",
       image: "/odc-cargo-home.png",
       text: "We specialize in the movement of over-dimensional and heavy-lift cargo across India (ODC). Our services cater to heavy infrastructure, power, oil & gas, and mechanical engineering projects."
@@ -201,7 +201,7 @@ export default function Home() {
               { title: "ISO Tankers", icon: <Ship size={32} />, desc: "Pan India transportation of bulk liquids and gases using internationally certified ISO tankers.", image: "/iso-tankers-card.png" },
               { title: "Liquid Tankers", icon: <Truck size={32} />, desc: "Efficient and reliable transportation of edible oils, chemicals, and industrial liquids via specialized tankers.", image: "/liquid-tankers-card.png" },
               { title: "Break Bulk Cargo", icon: <Package size={32} />, desc: "Handling and transportation of non-containerized goods that require specialized loading and secure transit.", image: "/break-bulk-card.png" },
-              { title: "ODC Cargo", icon: <Truck size={32} />, desc: "Expertise in moving over-dimensional and heavy-lift cargo that exceeds standard size and weight limits.", image: "/odc-cargo-card.png" },
+              { title: "OVER DIMENSION CARGO", icon: <Truck size={32} />, desc: "Expertise in moving over-dimensional and heavy-lift cargo that exceeds standard size and weight limits.", image: "/odc-cargo-card.png" },
               { title: "Freight Forwarding", icon: <Globe size={32} />, desc: "End-to-end management of domestic and international shipments via air/sea with single-window support.", image: "/freight-forwarding-card.png" }
             ].map((service, idx) => (
               <motion.div key={idx} whileHover={{ y: -10 }} className="card service-card">

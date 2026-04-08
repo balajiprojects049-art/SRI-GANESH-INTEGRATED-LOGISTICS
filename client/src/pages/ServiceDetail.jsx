@@ -102,7 +102,7 @@ const servicesData = {
     industries: ["Steel & Metal Industries", "Construction & Infrastructure", "Power Plant Equipment", "Heavy Engineering"]
   },
   "odc-cargo": {
-    title: "ODC Cargo",
+    title: "OVER DIMENSION CARGO",
     icon: <Truck size={48} />,
     image: "/odc-cargo-detail.png",
     subtitle: "Advanced logistics for over-dimensional heavy cargo.",

@@ -50,7 +50,7 @@ export default function Services() {
     },
     {
       id: "odc-cargo",
-      title: "Out of Dimension Cargo (ODC)",
+      title: "OVER DIMENSION CARGO",
       icon: <Truck size={40} />,
       desc: "Specialized movement of over-dimensional and heavy-lift cargo including infrastructure and power plant equipment, managed by a dedicated ODC team.",
       bg: "/odc-cargo-card.png"
