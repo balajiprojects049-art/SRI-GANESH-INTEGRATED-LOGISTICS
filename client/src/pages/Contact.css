@@ -123,3 +123,64 @@
   font-weight: 700;
   color: var(--primary-color) !important;
 }
+
+/* ── Mobile Optimization ────────────────────────────── */
+@media (max-width: 768px) {
+  .page-header.py-56 {
+    padding-top: 8rem !important;
+    padding-bottom: 4rem !important;
+  }
+  
+  .contact-page .grid {
+    gap: 1.5rem;
+  }
+  
+  .contact-info, 
+  .contact-form {
+    padding: 1.5rem !important;
+  }
+  
+  .contact-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info-item {
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  
+  .contact-icon-box {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+  }
+  
+  .contact-icon-box svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .contact-info-text h4 {
+    font-size: 0.75rem;
+  }
+  
+  .contact-info-text p {
+    font-size: 0.9rem;
+  }
+  
+  .btn-primary.w-full {
+    padding: 1rem !important;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .office-card {
+    padding: 1.25rem;
+  }
+  
+  .page-header h1 {
+    font-size: 2.5rem !important;
+  }
+}
