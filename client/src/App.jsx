@@ -13,6 +13,7 @@ import ProjectForwarding from './pages/ProjectForwarding';
 import Transportation from './pages/Transportation';
 import WarehousingPage from './pages/WarehousingPage';
 import CustomClearance from './pages/CustomClearance';
+import ServiceDetail from './pages/ServiceDetail';
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/quote" element={<Quote />} />
+          <Route path="/services/:id" element={<ServiceDetail />} />
           <Route path="/services/freight-forwarding" element={<FreightForwarding />} />
           <Route path="/services/project-forwarding" element={<ProjectForwarding />} />
           <Route path="/services/transportation" element={<Transportation />} />

@@ -6,33 +6,48 @@ import './Home.css';
 import './Contact.css';
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("Custom Clearance");
+  const [activeTab, setActiveTab] = useState("Reefer Containers");
 
   const tabData = {
+    "Reefer Containers": {
+      route: "/services/reefer-containers",
+      image: "/Gemini_Generated_Image_8yyfqr8yyfqr8yyf.png",
+      text: "We provide PAN India movement of temperature-sensitive products, ensuring seamless and efficient cold logistics. Our services cater to industries requiring precise temperature control, including pharmaceuticals, dairy, frozen foods, seafood, meat, and other perishable goods."
+    },
+    "Regular Containers": {
+      route: "/services/regular-containers",
+      image: "/Gemini_Generated_Image_5cbiyz5cbiyz5cbi.png",
+      text: "We provide reliable and cost-effective PAN India movement of goods using regular containers. Our services cater to a wide range of industries, including FMCG, textiles, electronics, automobile parts, and general merchandise."
+    },
+    "Hazardous Cargo": {
+      route: "/services/hazardous-cargo",
+      image: "/Gemini_Generated_Image_fbi3okfbi3okfbi3.png",
+      text: "We provide safe and compliant transportation of hazardous materials across India - including chemicals, flammable substances, industrial gases, and other dangerous goods - adhering to all regulatory safety standards."
+    },
+    "ISO Tankers": {
+      route: "/services/iso-tankers",
+      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop",
+      text: "We provide Pan India transportation of bulk liquids and gases using certified ISO tank containers. Ensuring safe and contamination-free movement, our services cater to chemicals, petrochemicals, and food-grade liquids."
+    },
+    "Liquid Tankers": {
+      route: "/services/liquid-tankers",
+      image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=800&auto=format&fit=crop",
+      text: "We provide efficient and reliable transportation of liquid cargo across India, specialized in edible oils, beverages, chemicals, and water - ensuring hygienic, leak-proof, and timely delivery from source to destination."
+    },
+    "Break Bulk Cargo": {
+      route: "/services/break-bulk-cargo",
+      image: "https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=800&auto=format&fit=crop",
+      text: "We offer seamless handling and transportation of break bulk cargo managing goods that cannot be containerized due to their size, weight, or nature. We cater to industries like steel, construction, and large machinery."
+    },
+    "ODC Cargo": {
+      route: "/services/odc-cargo",
+      image: "https://images.unsplash.com/photo-1494412574743-01947f15b6b7?q=80&w=800&auto=format&fit=crop",
+      text: "We specialize in the movement of over-dimensional and heavy-lift cargo across India (ODC). Our services cater to heavy infrastructure, power, oil & gas, and mechanical engineering projects."
+    },
     "Freight Forwarding": {
       route: "/services/freight-forwarding",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop",
-      text: "Our global reach and robust network ensure seamless Freight Forwarding solutions. With strategic partnerships across air, sea, and road networks, we optimize freight routes for unparalleled cost-efficiency and speed-to-market."
-    },
-    "Project Forwarding": {
-      route: "/services/project-forwarding",
-      image: "https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=800&auto=format&fit=crop",
-      text: "Specializing in Over-Dimensional Cargo (ODC) and Super Large structures. We execute highly complex turn-key Project Forwarding operations with dedicated on-site teams, guaranteeing precision engineering and safety."
-    },
-    "Transportation": {
-      route: "/services/transportation",
-      image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=800&auto=format&fit=crop",
-      text: "Offering a comprehensive fleet of transport vehicles designed for every requirement. From last-mile delivery to cross-border heavy hauling, our Transportation framework is the backbone of India's leading supply chains."
-    },
-    "Warehousing": {
-      route: "/services/warehousing",
-      image: "https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=800&auto=format&fit=crop",
-      text: "State-of-the-art warehousing facilities equipped with modern inventory management. Secure, climate-controlled, and highly flexible storage options ensuring your assets are protected and readily deployable."
-    },
-    "Custom Clearance": {
-      route: "/services/custom-clearance",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop",
-      text: "Our expertise and sound knowledge in customs related matters makes us an ideal Custom Clearing Agent, for all your Custom Clearance issues. We navigate complex regulatory gateways seamlessly."
+      image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=800&auto=format&fit=crop",
+      text: "We provide end-to-end freight forwarding services, managing the complete movement of goods across domestic and international routes, covering air freight, sea freight, and last-mile delivery."
     }
   };
 
@@ -40,7 +55,7 @@ export default function Home() {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
   };
-  
+
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: { y: 0, opacity: 1, transition: { duration: 0.6 } }
@@ -52,20 +67,20 @@ export default function Home() {
       <section className="hero">
         <div className="hero-overlay"></div>
         <div className="hero-bg" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop')" }}></div>
-        
+
         <div className="container hero-content">
           <motion.div initial="hidden" animate="visible" variants={containerVariants} className="hero-text">
             <motion.h1 variants={itemVariants} className="text-light">
-              Reliable Logistics. <br /> 
+              Reliable Logistics. <br />
               <span style={{ color: 'var(--accent-color)' }}>Delivered </span>
               <span style={{ color: '#8bbce3' }}>Globally.</span>
             </motion.h1>
             <motion.p variants={itemVariants} className="hero-desc">
-              Sri Ganesh Integrated Logistics is a one-stop integrated logistics and transportation service provider — offering comprehensive, high-quality solutions in shipping, freight forwarding, and supply chain management since 2009.
+              Sri Ganesh Integrated Logistics is your one-stop solution for all your business logistics needs. We offer a comprehensive range of services - including Reefer Containers, Regular Containers, Hazardous Cargo, ISO Tankers, Liquid Tankers, Break Bulk Cargo, Out of Dimension (ODC) Cargo, and Freight Forwarding - handling every leg of your shipment so your business never skips a beat.
             </motion.p>
             <motion.div variants={itemVariants} className="hero-ctas flex gap-4 mt-8">
               <Link to="/quote" className="btn btn-primary">Get Quote</Link>
-              <Link to="/services" className="btn btn-outline" style={{borderColor: 'white', color: 'white'}}>Our Services</Link>
+              <Link to="/services" className="btn btn-outline" style={{ borderColor: 'white', color: 'white' }}>Our Services</Link>
             </motion.div>
           </motion.div>
         </div>
@@ -74,52 +89,60 @@ export default function Home() {
       {/* Stats Section */}
       <section className="stats-section bg-white py-16">
         <div className="container">
-          <div className="grid md:grid-cols-4 gap-8 text-center stats-grid">
+          <div className="flex flex-wrap justify-center gap-8 text-center stats-grid">
             <motion.div whileHover={{ scale: 1.05 }} className="stat-card p-6 glass shadow-sm rounded-lg">
-              <h2 className="stat-number text-gradient">2009</h2>
+              <h2 className="stat-number text-gradient">2001</h2>
               <p className="stat-label">Established</p>
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} className="stat-card p-6 glass shadow-sm rounded-lg">
-              <h2 className="stat-number text-gradient">15+</h2>
+              <h2 className="stat-number text-gradient">25+</h2>
               <p className="stat-label">Years Experience</p>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.05 }} className="stat-card p-6 glass shadow-sm rounded-lg">
-              <h2 className="stat-number text-gradient">6</h2>
-              <p className="stat-label">Office Locations</p>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.05 }} className="stat-card p-6 glass shadow-sm rounded-lg">
-              <h2 className="stat-number text-gradient">ISO</h2>
-              <p className="stat-label">9001:2008 Certified</p>
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Welcome & Interactive Showcase */}
-      <section className="welcome-interactive">
-        <div className="container" style={{ padding: '4rem 1.5rem' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.3fr 0.8fr', gap: '2.5rem', alignItems: 'stretch' }}>
-            
-            {/* Left: Welcome Text */}
-            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-              <h2>Welcome</h2>
-              <p>
-                A total one-resource integrated logistics and transportation service provider, <strong style={{ color: 'var(--primary-color)' }}>Sri Ganesh Integrated Logistics</strong> offers a wide range of quality solutions in areas ranging from Transport Operations to Freight booking, Project Forwarding, Documentation and shipment of Hazardous cargo, etc.
+      {/* Welcome Section */}
+      <section className="welcome-section py-24 bg-white">
+        <div className="container text-center">
+          <div style={{ maxWidth: '950px', margin: '0 auto' }}>
+            <h2 className="section-title mb-8">Welcome to <span className="text-accent">Sri Ganesh</span> <span className="text-secondary">Integrated Logistics</span></h2>
+            <div className="welcome-text-centered text-lg leading-relaxed">
+              <p className="mb-6" style={{ fontSize: '1.25rem', color: 'var(--primary-color)', fontWeight: 500 }}>
+                Your complete, single-source partner for all logistics and transportation needs across India and beyond.
               </p>
-              <p>
-                Driven by the desire for excellence, we are committed to provide customers, result-oriented services and maintaining sound relationship based on integrity and trust with our customers and partners.
+              <p className="mb-6 text-muted">
+                We offer a comprehensive range of services - including Reefer Containers, Regular Containers, Hazardous Cargo, ISO Tankers, Liquid Tankers, Break Bulk Cargo, Out of Dimension (ODC) Cargo, and Freight Forwarding - delivering end-to-end solutions tailored to the unique demands of every industry.
               </p>
-              <p style={{ fontWeight: 600, color: 'var(--primary-color)' }}>
-                Get in touch with us to understand how we can help fulfill your requirements.
+              <p className="mb-6 text-muted">
+                From temperature-controlled cold chain logistics to the safe movement of hazardous materials, from oversized heavy-lift cargo to seamless international freight forwarding, we have the expertise, infrastructure, and commitment to handle it all under one roof.
               </p>
-              <h4 className="iso-label" style={{ color: 'var(--accent-color)', fontWeight: 700, fontSize: '1rem', marginTop: '1rem' }}>
-                NS-EN ISO 9001:2008 / ISO 9001:2008
-              </h4>
+              <p className="mb-8 text-muted">
+                Driven by a culture of excellence and operational precision, we go beyond simply moving cargo - we build lasting partnerships with our customers and business associates, grounded in integrity, transparency, and a genuine dedication to outcomes that matter to your business.
+              </p>
+              <div className="mt-12 p-10 glass-dark rounded-lg text-white shadow-2xl relative overflow-hidden" style={{ borderLeft: '6px solid var(--accent-color)' }}>
+                <p className="text-2xl font-bold tracking-tight italic" style={{ lineHeight: '1.4', color: '#ffffff' }}>
+                  "At Sri Ganesh Integrated Logistics, your cargo is not just a shipment - it is our responsibility."
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
+      {/* Interactive Services Showcase */}
+      <section className="interactive-showcase py-20 bg-light border-y border-gray-100">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="section-title">Explore Our <span className="text-accent">Solutions</span></h2>
+            <p className="text-muted">Select a service to learn more about our specialized capabilities</p>
+          </div>
+          
+          <div className="interactive-grid">
             {/* Middle: Image + Description */}
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <motion.div 
+              <motion.div
                 key={activeTab}
                 initial={{ opacity: 0, scale: 0.98 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -131,7 +154,9 @@ export default function Home() {
               <div className="welcome-desc-box">
                 <p>{tabData[activeTab].text}</p>
                 <div style={{ textAlign: 'right' }}>
-                  <Link to={tabData[activeTab].route}>More...</Link>
+                  <Link to={tabData[activeTab].route} className="font-bold text-primary hover:text-accent transition-colors">
+                    View Details →
+                  </Link>
                 </div>
               </div>
             </div>
@@ -139,18 +164,16 @@ export default function Home() {
             {/* Right: Tab Menu */}
             <div className="welcome-tab-menu" style={{ justifyContent: 'center', display: 'flex', flexDirection: 'column' }}>
               {Object.keys(tabData).map((tab) => (
-                <Link
+                <button
                   key={tab}
-                  to={tabData[tab].route}
-                  onMouseEnter={() => setActiveTab(tab)}
+                  onClick={() => setActiveTab(tab)}
                   className={`welcome-tab-btn${activeTab === tab ? ' active' : ''}`}
                   style={{ textDecoration: 'none' }}
                 >
                   {tab}
-                </Link>
+                </button>
               ))}
             </div>
-
           </div>
         </div>
       </section>
@@ -163,20 +186,22 @@ export default function Home() {
             <h2 className="section-title">Our Core <span className="text-accent">Services</span></h2>
             <p className="section-subtitle text-muted">End-to-end logistics solutions for every industry need</p>
           </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
+
+          <div className="grid md:grid-cols-4 gap-8">
             {[
-              { title: "Sea Freight", icon: <Ship size={32} />, desc: "Cost-effective ocean shipping including FCL, LCL, cargo tracking, consolidation, and customs clearance to all global destinations." },
-              { title: "Air Freight", icon: <Plane size={32} />, desc: "High-speed delivery for cargo of any shape or size, with specialized expertise in Super Large and Heavy cargo shipments." },
-              { title: "Project Forwarding", icon: <Package size={32} />, desc: "Dedicated on-site teams for international projects, specializing in Super Large Cargo with significant cost savings on freight." },
-              { title: "Freight Forwarding", icon: <Globe size={32} />, desc: "Air, Ocean, Rail, and Road transport via a global agent network with single-point document handling and documentation support." },
-              { title: "Warehousing", icon: <Warehouse size={32} />, desc: "Secure, flexible storage solutions with real-time inventory management to keep your global supply chain running smoothly." },
-              { title: "Customs Clearance", icon: <Truck size={32} />, desc: "Professional handling of all regulatory documentation and clearance processes for seamless import and export operations." }
+              { title: "Reefer Containers", icon: <Truck size={32} />, desc: "Pan India movement of temperature-sensitive products, ensuring seamless and efficient cold chain logistics.", image: "/Gemini_Generated_Image_n6bbjqn6bbjqn6bb.png" },
+              { title: "Regular Containers", icon: <Package size={32} />, desc: "Reliable and cost-effective Pan India movement of goods using standard dry containers.", image: "/Gemini_Generated_Image_3wo3ky3wo3ky3wo3.png" },
+              { title: "Hazardous Cargo", icon: <ShieldCheck size={32} />, desc: "Safe, secure, and fully compliant transportation of hazardous materials including port-to-factory movements.", image: "/Gemini_Generated_Image_x9eyb1x9eyb1x9ey.png" },
+              { title: "ISO Tankers", icon: <Ship size={32} />, desc: "Pan India transportation of bulk liquids and gases using internationally certified ISO tankers." },
+              { title: "Liquid Tankers", icon: <Truck size={32} />, desc: "Efficient and reliable transportation of edible oils, chemicals, and industrial liquids via specialized tankers." },
+              { title: "Break Bulk Cargo", icon: <Package size={32} />, desc: "Handling and transportation of non-containerized goods that require specialized loading and secure transit." },
+              { title: "ODC Cargo", icon: <Truck size={32} />, desc: "Expertise in moving over-dimensional and heavy-lift cargo that exceeds standard size and weight limits." },
+              { title: "Freight Forwarding", icon: <Globe size={32} />, desc: "End-to-end management of domestic and international shipments via air/sea with single-window support." }
             ].map((service, idx) => (
               <motion.div key={idx} whileHover={{ y: -10 }} className="card service-card">
                 <div className="card-icon">{service.icon}</div>
-                <h3>{service.title}</h3>
-                <p className="text-muted mt-2 mb-4">{service.desc}</p>
+                <h3 className="text-xl mb-2">{service.title}</h3>
+                <p className="text-muted mb-4">{service.desc}</p>
                 <Link to="/services" className="link-arrow flex items-center text-accent fw-bold">
                   Learn More <ArrowRight size={16} className="ml-2" />
                 </Link>
@@ -190,12 +215,12 @@ export default function Home() {
       <section className="why-us py-24">
         <div className="container grid md:grid-cols-2 gap-16 items-center">
           <div className="why-us-content">
-            <h2 className="mb-8">Why Choose <br/><span className="text-gradient">Sri Ganesh Integrated Logistics?</span></h2>
+            <h2 className="mb-8">Why Choose <br /><span className="text-gradient">Sri Ganesh Integrated Logistics?</span></h2>
             <div className="features-list">
               {[
-                { title: "Global Reach", icon: <Globe />, text: "Extensive agent network spanning air, ocean, rail, and road across all continents." },
-                { title: "ISO Certified Quality", icon: <ShieldCheck />, text: "NS-EN ISO 9001:2008 certified — ensuring highest standards in every shipment." },
-                { title: "Timely Delivery", icon: <Clock />, text: "24/7 dedicated support with a proven track record of on-time delivery worldwide." }
+                { title: "Pan India & Global Reach", icon: <Globe />, text: "Extensive network spanning road, sea and air routes across India and international destinations - ensuring seamless connectivity for every shipment." },
+                { title: "Timely Delivery", icon: <Clock />, text: "24/7 dedicated operations team with a proven track record of on-time delivery - because your deadlines are our priority." },
+                { title: "20+ Years of Experience", icon: <ShieldCheck />, text: "Over two decades of industry expertise - trusted by leading pharmaceutical, FMCG, and industrial companies across India." }
               ].map((feat, i) => (
                 <div key={i} className="feature-item flex gap-4 mb-6">
                   <div className="feature-icon mt-1 text-accent">{feat.icon}</div>

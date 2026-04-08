@@ -6,60 +6,60 @@ import './Services.css';
 export default function Services() {
   const services = [
     {
-      id: "freight-forwarding",
-      title: "Freight Forwarding",
-      icon: <Globe size={40} />,
-      desc: "Air, Ocean, Rail, and Road transport facilities through a global agent network. We provide single-point handling for Negotiable Documents, Documentation Support System solutions, and comprehensive supply chain solutions.",
-      bg: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop"
-    },
-    {
-      id: "sea-freight",
-      title: "Sea Freight",
-      icon: <Ship size={40} />,
-      desc: "Efficient, cost-effective, and safe ocean freight services to all global destinations. Our logistics package includes Cargo Tracking, Consolidation, Documentation, Shipping Insurance, Customs Clearance, and Inland Transportation.",
-      bg: "https://images.unsplash.com/photo-1494412651409-8963ce7935a7?q=80&w=2070&auto=format&fit=crop"
-    },
-    {
-      id: "air-freight",
-      title: "Air Freight",
-      icon: <Plane size={40} />,
-      desc: "High-speed delivery handling cargo of any shape or size, with specialized expertise in Super Large and Heavy cargo. Ideal for time-sensitive shipments requiring priority handling worldwide.",
-      bg: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop"
-    },
-    {
-      id: "project-forwarding",
-      title: "Project Forwarding",
-      icon: <Package size={40} />,
-      desc: "Dedicated on-site staff for international projects. Specializing in Super Large Cargo (single items exceeding 1090\" L × 111\" W × 105\" H) with savvy vendor coordination, hub consolidation, and significant cost savings on freight and documentation.",
-      bg: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop"
-    },
-    {
-      id: "break-bulk",
-      title: "Break Bulk",
+      id: "reefer-containers",
+      title: "Reefer Containers",
       icon: <Truck size={40} />,
-      desc: "Expert handling of general cargo that must be loaded individually (non-containerized). We ensure safe, efficient, and cost-effective break-bulk operations for oversized or unconventional shipments.",
-      bg: "https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=2070&auto=format&fit=crop"
+      desc: "Pan India movement of temperature-sensitive products including pharmaceuticals, dairy, and frozen foods. Equipped with advanced temperature control maintaining -25°C to +25°C.",
+      bg: "/Gemini_Generated_Image_uq4cbuuq4cbuuq4c.png"
+    },
+    {
+      id: "regular-containers",
+      title: "Regular Containers",
+      icon: <Package size={40} />,
+      desc: "Reliable and cost-effective Pan India movement of goods using 20ft and 40ft dry containers for FMCG, textiles, and general merchandise.",
+      bg: "/Gemini_Generated_Image_3wo3ky3wo3ky3wo3.png"
     },
     {
       id: "hazardous-cargo",
       title: "Hazardous Cargo",
       icon: <AlertTriangle size={40} />,
-      desc: "Specialized documentation and shipment handling for dangerous goods. Our team is trained in compliance, safety protocols, and regulatory requirements for the safe transport of hazardous materials.",
-      bg: "https://images.unsplash.com/photo-1580911465729-9e59d6a5b1e2?q=80&w=2070&auto=format&fit=crop"
+      desc: "Safe and compliant transportation of hazardous materials across India. Full compliance with IMDG and ADR standards with specially trained handling crews.",
+      bg: "/Gemini_Generated_Image_x9eyb1x9eyb1x9ey.png"
     },
     {
-      id: "warehousing",
-      title: "Warehousing",
-      icon: <Warehouse size={40} />,
-      desc: "Secure storage solutions for various types of cargo. Our warehousing facilities offer flexible, scalable space with real-time inventory management to keep your supply chain moving smoothly.",
-      bg: "https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=2070&auto=format&fit=crop"
+      id: "iso-tankers",
+      title: "ISO Tankers",
+      icon: <Ship size={40} />,
+      desc: "Pan India transportation of bulk liquids and gases using certified ISO tankers. Dedicated trailer movements from port to factory ensure safe, contamination-free handling.",
+      bg: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
     },
     {
-      id: "customs-clearance",
-      title: "Customs Clearance",
-      icon: <FileCheck size={40} />,
-      desc: "Professional handling of all regulatory documentation and clearance processes. We ensure smooth, compliant, and timely customs procedures for both import and export shipments.",
-      bg: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop"
+      id: "liquid-tankers",
+      title: "Liquid Tankers",
+      icon: <Truck size={40} />,
+      desc: "Efficient movement of food-grade and chemical-grade liquids including edible oils and beverages. Specialized tankers ensure hygienic and timely delivery.",
+      bg: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=2070&auto=format&fit=crop"
+    },
+    {
+      id: "break-bulk",
+      title: "Break Bulk Cargo",
+      icon: <Package size={40} />,
+      desc: "Seamless handling and transportation of non-containerized cargo like steel, machinery, and project goods requiring specialized loading and security.",
+      bg: "https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=2070&auto=format&fit=crop"
+    },
+    {
+      id: "odc-cargo",
+      title: "Out of Dimension Cargo (ODC)",
+      icon: <Truck size={40} />,
+      desc: "Specialized movement of over-dimensional and heavy-lift cargo including infrastructure and power plant equipment, managed by a dedicated ODC team.",
+      bg: "https://images.unsplash.com/photo-1494412574743-01947f15b6b7?q=80&w=2070&auto=format&fit=crop"
+    },
+    {
+      id: "freight-forwarding",
+      title: "Freight Forwarding",
+      icon: <Globe size={40} />,
+      desc: "End-to-end management of domestic and international shipments covering air freight, sea freight, and last-mile delivery with single-window support.",
+      bg: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop"
     }
   ];
 
@@ -72,8 +72,8 @@ export default function Services() {
             <span style={{ color: '#ffffff' }}>Our </span>
             <span style={{ color: '#EF4444' }}>Services</span>
           </motion.h1>
-          <motion.p initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2 }} className="text-xl mt-4 max-w-2xl mx-auto" style={{ color: '#ffffff', textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}>
-            Comprehensive global logistics solutions — from freight forwarding to customs clearance, customized for your needs.
+          <motion.p initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2 }} className="text-xl mt-4 max-w-2xl mx-auto" style={{ color: '#ffffff', textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
+            Comprehensive pan-India and global logistics solutions - from temperature-controlled reefer containers to heavy-lift ODC cargo, tailored to meet your business needs.
           </motion.p>
         </div>
       </section>
@@ -100,7 +100,7 @@ export default function Services() {
                   <h2 className="text-2xl mb-4">{service.title}</h2>
                   <p className="text-muted mb-6 flex-1">{service.desc}</p>
                   <Link 
-                    to={`/services/${service.id === 'customs-clearance' ? 'custom-clearance' : service.id === 'sea-freight' || service.id === 'air-freight' ? 'freight-forwarding' : service.id}`} 
+                    to={`/services/${service.id}`} 
                     className="btn btn-outline w-full justify-center group"
                   >
                     Explore Service <ArrowRight className="ml-2 group-hover:translate-x-2 transition-transform" />
@@ -132,11 +132,10 @@ export default function Services() {
             Need a Custom Solution?
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.95)', marginBottom: '2.5rem', maxWidth: '600px', margin: '0 auto 2.5rem auto', fontSize: '1.1rem', textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>
-            Contact our experts today and we will tailor our services to meet your exact supply chain demands.
-          </p>
+          Contact us today and we will tailor our services to meet your exact business logistics demands.          </p>
           <div className="flex gap-4 justify-center">
             <Link to="/contact" className="btn btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.2rem', boxShadow: '0 8px 24px rgba(0,0,0,0.4)' }}>
-              Contact Experts
+              Contact Us
             </Link>
             <Link to="/quote" className="btn btn-primary" style={{ backgroundColor: '#ffffff', color: 'var(--primary-color)', padding: '1rem 2.5rem', fontSize: '1.2rem', boxShadow: '0 8px 24px rgba(0,0,0,0.4)' }}>
               Get a Quote

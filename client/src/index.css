@@ -28,6 +28,11 @@
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +44,6 @@ body {
   background-color: var(--bg-color);
   color: var(--text-dark);
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 h1,
@@ -106,10 +110,11 @@ button {
 }
 
 .glass-dark {
-  background: rgba(38, 38, 104, 0.85);
+  background: linear-gradient(135deg, rgba(38, 38, 104, 0.95) 0%, rgba(20, 20, 60, 0.98) 100%);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 /* Buttons */

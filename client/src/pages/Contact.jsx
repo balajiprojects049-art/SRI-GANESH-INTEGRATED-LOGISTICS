@@ -11,65 +11,37 @@ export default function Contact() {
     {
       city: "Hyderabad",
       label: "Head Office",
-      address: "Plot No:10, Aparajitha Colony, Near Meridian Plaza, Ameerpet, Hyderabad - 5000 016",
-      phone: "+91 98493 56197",
-      email: "parvender@ggishipping.com"
+      address: "6-3-852/2/B4, Plot No. 10, Aparajitha Colony, Ameerpet, Hyderabad, Telengana - 500016.",
+      phone: "9494922080, 9849356197",
+      email: "contact.sgilogistics@gmail.com"
     },
     {
       city: "Vishakapatnam",
       label: "Branch Office",
       address: "10-37-27, Rich House, Ram Nagar, Vishakapatnam - 530002, Andhra Pradesh, India",
-      phone: "+91 90006 01100",
-      email: "parvender@ggishipping.com"
-    },
-    {
-      city: "Krishnapatinam",
-      label: "Branch Office",
-      address: "No. 306, 3rd Floor, DNJ Commercial Complex, Gopala Puram Village, Krishnapatnam Panchayat, Muthukur Mandal, Nellore, Andhra Pradesh - 524344",
-      phone: "",
-      email: "parvender@ggishipping.com"
+      phone: "9494922080, 9849356197",
+      email: "contact.sgilogistics@gmail.com"
     },
     {
       city: "Mumbai",
       label: "Branch Office",
       address: "54, Shalaka, D. N Nagar, Andheri (W), Mumbai - 400 053",
-      phone: "+91 90000 01007 / +91 93228 89957",
-      email: "parvender@ggishipping.com"
+      phone: "9494922080, 9849356197",
+      email: "contact.sgilogistics@gmail.com"
     },
     {
       city: "Chennai",
       label: "Branch Office",
       address: "Ramarau Buildings, 3rd Floor, 299/144, Thambuchetty Street, Chennai - 600001",
-      phone: "",
-      email: "parvender@ggishipping.com"
-    },
-    {
-      city: "Delhi",
-      label: "Branch Office",
-      address: "A-111, Pariyavaran Complex, Neb Sari Road, New Delhi - 30",
-      phone: "+91 90000 01007 / +91 98112 09066",
-      email: "parvender@ggishipping.com"
-    },
-    {
-      city: "Ahmedabad",
-      label: "Branch Office",
-      address: "Block No-31A, 3rd Floor, Prime Plaza, Judge Bunglow Road, Ahmedabad",
-      phone: "+91 90000 01007 / +91 93755 31688",
-      email: "parvender@ggishipping.com"
-    },
-    {
-      city: "Gujarat (Kandala)",
-      label: "Branch Office",
-      address: "12, 275/12B, Gandhi Dham, Gujarat",
-      phone: "+91 90000 01007",
-      email: "parvender@ggishipping.com"
+      phone: "9494922080, 9849356197",
+      email: "contact.sgilogistics@gmail.com"
     },
     {
       city: "Bangalore",
       label: "Branch Office",
       address: "2555, 13th Mai, 9th Cross, E Block, Sahakarnagar, Bangalore - 560092",
-      phone: "+91 91000 08009",
-      email: "parvender@ggishipping.com"
+      phone: "9494922080, 9849356197",
+      email: "contact.sgilogistics@gmail.com"
     },
   ];
 
@@ -151,10 +123,6 @@ export default function Contact() {
                   <Mail size={15} />
                   <a href={`mailto:${office.email}`}>{office.email}</a>
                 </div>
-                <div className="office-card-row">
-                  <Mail size={15} style={{opacity:0}} />
-                  <a href="mailto:ggihybad@gmail.com">ggihybad@gmail.com</a>
-                </div>
               </motion.div>
             ))}
           </div>
@@ -172,7 +140,7 @@ export default function Contact() {
                 <div className="contact-icon-box"><Phone size={22} /></div>
                 <div className="contact-info-text">
                   <h4>Head Office Phone</h4>
-                  <p>+91 98493 56197</p>
+                  <p>9494922080, 9849356197</p>
                 </div>
               </div>
 
@@ -180,8 +148,7 @@ export default function Contact() {
                 <div className="contact-icon-box"><Mail size={22} /></div>
                 <div className="contact-info-text">
                   <h4>Head Office Email</h4>
-                  <p>parvender@ggishipping.com</p>
-                  <p>ggihybad@gmail.com</p>
+                  <p>contact.sgilogistics@gmail.com</p>
                 </div>
               </div>
 
@@ -189,7 +156,7 @@ export default function Contact() {
                 <div className="contact-icon-box"><MapPin size={22} /></div>
                 <div className="contact-info-text">
                   <h4>Head Office Address</h4>
-                  <p>Plot No:10, Aparajitha Colony,<br/>Near Meridian Plaza, Ameerpet, Hyderabad - 5000 016</p>
+                  <p>6-3-852/2/B4, Plot No. 10, Aparajitha Colony,<br/>Ameerpet, Hyderabad, Telengana - 500016.</p>
                 </div>
               </div>
 
@@ -238,7 +205,7 @@ export default function Contact() {
       {/* Embedded Map - Ameerpet Hyderabad */}
       <section className="map-section w-full" style={{ height: '400px' }}>
         <iframe 
-          src="https://maps.google.com/maps?q=Plot+No+10,+Aparajitha+Colony,+Near+Meridian+Plaza,+Ameerpet,+Hyderabad&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+          src="https://maps.google.com/maps?q=6-3-852/2/B4,Plot+No.+10,Aparajitha+Colony,Ameerpet,Hyderabad,Telengana-500016&t=&z=15&ie=UTF8&iwloc=&output=embed" 
           width="100%" 
           height="400" 
           style={{border:0}} 

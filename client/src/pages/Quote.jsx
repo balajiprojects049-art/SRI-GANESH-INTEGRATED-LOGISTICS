@@ -92,14 +92,10 @@ export default function Quote() {
               {/* Cargo Details */}
               <div className="mb-8">
                 <h3 className="mb-4 text-xl border-b pb-2">3. Cargo Details</h3>
-                <div className="grid md:grid-cols-3 gap-6">
+                <div className="grid md:grid-cols-2 gap-6">
                   <div className="form-group">
                     <label className="form-label">Weight (kg)</label>
                     <input type="number" name="weight" className="form-control" placeholder="e.g. 500" required />
-                  </div>
-                  <div className="form-group">
-                    <label className="form-label">Volume (cbm) / Dimensions</label>
-                    <input type="text" name="volume" className="form-control" placeholder="L x W x H" />
                   </div>
                   <div className="form-group">
                     <label className="form-label">Cargo Commodity</label>
@@ -113,16 +109,24 @@ export default function Quote() {
                 <h3 className="mb-4 text-xl border-b pb-2">4. Your Information</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="form-group">
-                    <label className="form-label">Name</label>
-                    <input type="text" name="name" className="form-control" required />
+                    <label className="form-label">Full Name</label>
+                    <input type="text" name="name" className="form-control" placeholder="Enter your full name" required />
                   </div>
                   <div className="form-group">
-                    <label className="form-label">Email</label>
-                    <input type="email" name="email" className="form-control" required />
+                    <label className="form-label">Company Name</label>
+                    <input type="text" name="companyName" className="form-control" placeholder="Enter your company name" required />
+                  </div>
+                  <div className="form-group">
+                    <label className="form-label">Email Address</label>
+                    <input type="email" name="email" className="form-control" placeholder="email@company.com" required />
+                  </div>
+                  <div className="form-group">
+                    <label className="form-label">Phone / WhatsApp</label>
+                    <input type="tel" name="phone" className="form-control" placeholder="+91 Your Number" required />
                   </div>
                   <div className="form-group md:col-span-2">
-                    <label className="form-label">Phone / WhatsApp</label>
-                    <input type="tel" name="phone" className="form-control" required />
+                    <label className="form-label">Company Requirements</label>
+                    <textarea name="requirements" className="form-control" rows="4" placeholder="Briefly describe your specific logistics requirements..." required></textarea>
                   </div>
                 </div>
               </div>

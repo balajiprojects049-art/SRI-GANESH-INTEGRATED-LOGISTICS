@@ -15,7 +15,7 @@ export default function About() {
             <span style={{ color: '#EF4444' }}>Integrated Logistics</span>
           </motion.h1>
           <motion.p initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2 }} className="text-xl mt-4 max-w-2xl mx-auto" style={{ color: '#ffffff', textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}>
-            Established in 2009 — a trusted name in integrated logistics and transportation solutions.
+            Established in 2001 – a trusted name in end-to-end transportation solutions.
           </motion.p>
         </div>
       </section>
@@ -26,27 +26,35 @@ export default function About() {
           <motion.div initial={{ x: -30, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} viewport={{ once: true }}>
             <h2 className="mb-6">Our <span className="text-accent">Story</span></h2>
             <p className="mb-4 text-lg">
-              Established in the year 2009 by Mr. Parvender Singh, Sri Ganesh Integrated Logistics is a one-stop integrated logistics and transportation service provider, offering a comprehensive range of high-quality solutions in the shipping and transportation segment.
+              Established in the year 2001, Sri Ganesh Integrated Logistics has grown from a focused transportation venture into a full-scale, one-stop integrated logistics and transportation service provider - offering a comprehensive range of high-quality solutions across the shipping and transportation segment.
             </p>
             <p className="text-muted mb-4">
-              With a wealth of experience and expertise in various facets of the industry, we are ideally placed to offer solutions that give our clients a competitive advantage in navigating the complex global shipping environment.
+              With over two decades of experience and deep-rooted expertise across every facet of the industry, we are ideally positioned to deliver solutions that give our clients a true competitive advantage in navigating today's complex and ever-evolving logistics landscape.
+            </p>
+            <p className="text-muted mb-4">
+              Our services span a wide spectrum - from Reefer Containers, Regular Containers, and Hazardous Cargo to ISO Tankers, Liquid Tankers, Break Bulk, Out of Dimension (ODC) Cargo, and Freight Forwarding - touching every critical area of the supply chain.
             </p>
             <p className="text-muted mb-8">
-              Our solutions touch upon a host of areas ranging from Transport Operations to Freight Booking, Project Forwarding, Documentation, and shipment of Hazardous cargo. Leveraging our strong network of contacts, we are well-positioned to provide our clients easy access to international ship owners, operators, and charters — helping them extract greater cost-efficiencies in freight.
+              Leveraging a strong and trusted network of industry contacts built over the years, we are well-positioned to provide our clients seamless access to international ship owners, operators, and charters - helping them unlock greater cost efficiencies and smarter freight solutions.
             </p>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" /> Reliable Services</div>
-              <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" /> Global Network</div>
-              <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" /> ISO 9001:2008 Certified</div>
-              <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" /> Hazardous Cargo Experts</div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-4">
+              <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" size={18} /> Reliable Services</div>
+              <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" size={18} /> 20+ Years of Experience</div>
+              <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" size={18} /> Global Freight Forwarding</div>
+              <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" size={18} /> End-to-End Solutions</div>
+              <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" size={18} /> Pan India Network</div>
+              <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" size={18} /> Cold Chain Specialists</div>
             </div>
+            <p className="mt-16 p-8 bg-white border-l-4 border-accent italic text-lg shadow-sm">
+              "At Sri Ganesh Integrated Logistics, we don't just move cargo - we deliver trust, reliability, and over two decades of logistics excellence, because your business deserves a partner that goes the extra mile."
+            </p>
           </motion.div>
           <motion.div initial={{ x: 30, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} viewport={{ once: true }} className="relative">
-             <img src="/Gemini_Generated_Image_qn8unaqn8unaqn8u.png" alt="Cargo Ship" className="rounded-lg shadow-lg" />
-             <div className="experience-badge glass-dark text-light p-6 absolute bottom-[-30px] left-[-30px] rounded-lg shadow-glow">
-               <h3 className="text-3xl text-gradient">15+</h3>
-               <p className="font-bold text-sm uppercase letter-spacing">Years of<br/>Excellence</p>
-             </div>
+            <img src="/Gemini_Generated_Image_qn8unaqn8unaqn8u.png" alt="Cargo Ship" className="rounded-lg shadow-lg" />
+            <div className="experience-badge glass-dark text-light p-6 absolute bottom-[-30px] left-[-30px] rounded-lg shadow-glow">
+              <h3 className="text-4xl text-gradient">20+</h3>
+              <p className="font-bold text-sm uppercase letter-spacing">Years of<br />Excellence</p>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -58,31 +66,19 @@ export default function About() {
             <Target size={48} className="text-accent mx-auto mb-6" />
             <h3 className="mb-4">Our Mission</h3>
             <p className="text-muted">
-              To be a one-stop integrated logistics and transportation service provider, offering quality solutions with integrity and trust — enabling our clients to achieve their goals with maximum efficiency and at optimal costs.
+              To be a one-stop integrated transportation service provider, delivering reliable and high-quality solutions across Pan India and global routes - with integrity, trust, and a commitment to helping our clients achieve their goals with maximum efficiency and at optimal costs.
             </p>
           </motion.div>
           <motion.div whileHover={{ y: -10 }} className="card bg-light border-secondary">
             <Eye size={48} className="text-secondary mx-auto mb-6" />
             <h3 className="mb-4">Our Vision</h3>
             <p className="text-muted">
-              To carve a niche as a market leader recognized for providing result-oriented, customized logistics solutions — building lasting trust through reliability, transparency, and operational excellence.
+              To be recognized as a leading transportation partner across India and beyond - known for our expertise, operational excellence, and unwavering commitment to delivering customized solutions that drive lasting value for every client we serve.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Certification */}
-      <section className="py-16 bg-light text-center">
-        <div className="container">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="card max-w-xl mx-auto flex flex-col items-center gap-4">
-            <ShieldCheck size={48} className="text-accent" />
-            <h3>ISO 9001:2008 Certified</h3>
-            <p className="text-muted">
-              Sri Ganesh Integrated Logistics is certified under <strong>NS-EN ISO 9001:2008</strong>, affirming our commitment to quality management systems and continuous improvement in service delivery.
-            </p>
-          </motion.div>
-        </div>
-      </section>
     </div>
   );
 }
