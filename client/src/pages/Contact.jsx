@@ -11,36 +11,51 @@ export default function Contact() {
   const offices = [
     {
       city: "Hyderabad",
+      state: "Telangana",
+      country: "India",
+      pincode: "500016",
       label: "Head Office",
-      address: "6-3-852/2/B4, Plot No. 10, Aparajitha Colony, Ameerpet, Hyderabad, Telangana - 500016.",
+      address: "6-3-852/2/B4, Plot No. 10, Aparajitha Colony, Ameerpet",
       phone: "9494922080, 9849356197",
       email: "contact.sgilogistics@gmail.com"
     },
     {
       city: "Visakhapatnam",
+      state: "Andhra Pradesh",
+      country: "India",
+      pincode: "530002",
       label: "Branch Office",
-      address: "10-37-27, Rich House, Ram Nagar, Visakhapatnam - 530002, Andhra Pradesh, India",
+      address: "10-37-27, Rich House, Ram Nagar",
       phone: "9494922080, 9849356197",
       email: "contact.sgilogistics@gmail.com"
     },
     {
       city: "Mumbai",
+      state: "Maharashtra",
+      country: "India",
+      pincode: "400053",
       label: "Branch Office",
-      address: "54, Shalaka, D.N. Nagar, Andheri (West), Mumbai - 400053",
+      address: "54, Shalaka, D.N. Nagar, Andheri (West)",
       phone: "9494922080, 9849356197",
       email: "contact.sgilogistics@gmail.com"
     },
     {
       city: "Chennai",
+      state: "Tamil Nadu",
+      country: "India",
+      pincode: "600001",
       label: "Branch Office",
-      address: "Rama Rau Buildings, 3rd Floor, 299/144, Thambu Chetty Street, Chennai - 600001",
+      address: "Rama Rau Buildings, 3rd Floor, 299/144, Thambu Chetty Street",
       phone: "9494922080, 9849356197",
       email: "contact.sgilogistics@gmail.com"
     },
     {
       city: "Bangalore",
+      state: "Karnataka",
+      country: "India",
+      pincode: "560092",
       label: "Branch Office",
-      address: "2555, 13th Main, 9th Cross, E Block, Sahakar Nagar, Bangalore - 560092",
+      address: "2555, 13th Main, 9th Cross, E Block, Sahakara Nagar",
       phone: "9494922080, 9849356197",
       email: "contact.sgilogistics@gmail.com"
     },
@@ -115,9 +130,9 @@ export default function Contact() {
                     <span className="office-card-badge">Head Office</span>
                   )}
                 </div>
-                <div className="office-card-row">
-                  <MapPin size={15} />
-                  <span>{office.address}</span>
+                <div className="office-card-row align-top">
+                  <MapPin size={15} className="mt-1" />
+                  <span>{office.address},<br/>{office.city}, {office.state}, {office.country} - {office.pincode}</span>
                 </div>
                 {office.phone && (
                   <div className="office-card-row">
@@ -162,7 +177,7 @@ export default function Contact() {
                 <div className="contact-icon-box"><MapPin size={22} /></div>
                 <div className="contact-info-text">
                   <h4>Head Office Address</h4>
-                  <p>6-3-852/2/B4, Plot No. 10, Aparajitha Colony,<br/>Ameerpet, Hyderabad, Telangana - 500016.</p>
+                  <p>6-3-852/2/B4, Plot No. 10, Aparajitha Colony,<br/>Ameerpet, Hyderabad, Telangana, India - 500016.</p>
                 </div>
               </div>
 

@@ -49,8 +49,8 @@ export default function Footer() {
             <h4 className="mb-4">Head Office</h4>
             <ul className="footer-contact text-muted">
               <li className="flex gap-2 mb-3">
-                <MapPin className="text-accent shrink-0" size={20} />
-                <span>6-3-852/2/B4, Plot No. 10, Aparajitha Colony, Ameerpet, Hyderabad, Telangana - 500016.</span>
+                <MapPin className="text-accent shrink-0 mt-1" size={20} />
+                <span>6-3-852/2/B4, Plot No. 10, Aparajitha Colony, Ameerpet,<br/>Hyderabad, Telangana, India - 500016.</span>
               </li>
               <li className="flex gap-2 mb-3">
                 <Phone className="text-accent shrink-0" size={20} />
