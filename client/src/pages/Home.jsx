@@ -85,7 +85,7 @@ export default function Home() {
     "Regular Containers": {
       route: "/services/regular-containers",
       image: "/regular-containers-card.png",
-      text: "We provide reliable and cost-effective PAN India movement of goods using regular containers. Our services cater to a wide range of industries, including FMCG, textiles, electronics, automobile parts, and general merchandise."
+      text: "We provide reliable and cost-effective PAN India transportation of goods using regular containers. Our services cater to a wide range of industries, including FMCG, textiles, electronics, automobile parts, and general merchandise."
     },
     "Hazardous Cargo": {
       route: "/services/hazardous-cargo",
@@ -95,7 +95,7 @@ export default function Home() {
     "ISO Tankers": {
       route: "/services/iso-tankers",
       image: "/iso-tankers-home.png",
-      text: "We provide Pan India transportation of bulk liquids and gases using certified ISO tank containers. Ensuring safe and contamination-free movement, our services cater to chemicals, petrochemicals, and food-grade liquids."
+      text: "We provide Pan India transportation of bulk liquids and gases using certified ISO tank containers. Ensuring safe and contamination-free delivery of chemicals, petrochemicals, and food-grade liquids."
     },
     "Liquid Tankers": {
       route: "/services/liquid-tankers",
@@ -132,7 +132,7 @@ export default function Home() {
   return (
     <div className="home-page">
       <Helmet>
-        <title>Sri Ganesh Integrated Logistics - 20+ Years in Pan India Transportation</title>
+        <title>Sri Ganesh Integrated Logistics - 25+ Years in Pan India Transportation</title>
         <meta name="description" content="One-stop integrated transportation service provider delivering reliable solutions across Pan India. Specialists in Reefer, Hazardous, and ISO Tankers cargo." />
         <link rel="canonical" href="https://www.sgilogistics.com" />
       </Helmet>
@@ -159,7 +159,7 @@ export default function Home() {
               <span style={{ color: '#8bbce3' }}>Globally.</span>
             </motion.h1>
             <motion.p variants={itemVariants} className="hero-desc">
-              Sri Ganesh Integrated Logistics is your one-stop solution for all your business logistics needs. We offer a comprehensive range of services - including Reefer Containers, Regular Containers, Hazardous Cargo, ISO Tankers, Liquid Tankers, Break Bulk Cargo, Out of Dimension (ODC) Cargo, and Freight Forwarding - handling every leg of your shipment so your business never skips a beat.
+              Sri Ganesh Integrated Logistics is your complete one-stop partner for all business logistics needs. We provide a comprehensive range of services — from transportation via Reefer Containers, Regular Containers, ISO Tankers, and Liquid Tankers, to expert handling and movement of Hazardous Cargo, Break Bulk Cargo, and Over Dimensional Cargo (ODC), along with end-to-end Freight Forwarding services. From the first mile to the last, we manage every leg of your shipment — so your business never misses a beat.
             </motion.p>
             <motion.div variants={itemVariants} className="hero-ctas flex gap-4 mt-8">
               <Link to="/quote" className="btn btn-primary">Get Quote</Link>
@@ -204,17 +204,17 @@ export default function Home() {
                 Your complete, single-source partner for all logistics and transportation needs across India and beyond.
               </p>
               <p className="mb-6 text-muted">
-                We offer a comprehensive range of services - including Reefer Containers, Regular Containers, Hazardous Cargo, ISO Tankers, Liquid Tankers, Break Bulk Cargo, Out of Dimension (ODC) Cargo, and Freight Forwarding - delivering end-to-end solutions tailored to the unique demands of every industry.
+                We offer a comprehensive range of logistics services — spanning Reefer Containers, Regular Containers, ISO Tankers, Liquid Tankers, specialized handling and transportation of Hazardous Cargo, Break Bulk Cargo, and Over Dimensional Cargo (ODC), along with complete Freight Forwarding solutions — each tailored to meet the unique demands of every industry we serve.
               </p>
               <p className="mb-6 text-muted">
                 From temperature-controlled cold chain logistics to the safe movement of hazardous materials, from oversized heavy-lift cargo to seamless international freight forwarding, we have the expertise, infrastructure, and commitment to handle it all under one roof.
               </p>
               <p className="mb-8 text-muted">
-                Driven by a culture of excellence and operational precision, we go beyond simply moving cargo - we build lasting partnerships with our customers and business associates, grounded in integrity, transparency, and a genuine dedication to outcomes that matter to your business.
+                Driven by a culture of excellence and operational precision, we go beyond simply moving cargo - we build lasting partnerships with our customers and business associates, grounded in integrity, transparency, and a strong commitment to outcomes that matter to your business.
               </p>
               <div className="mt-12 p-10 glass-dark rounded-lg text-white shadow-2xl relative overflow-hidden" style={{ borderLeft: '6px solid var(--accent-color)' }}>
                 <p className="text-2xl font-bold tracking-tight italic" style={{ lineHeight: '1.4', color: '#ffffff' }}>
-                  "At Sri Ganesh Integrated Logistics, your cargo is not just a shipment - it is our responsibility."
+                  "At Sri Ganesh Integrated Logistics, your cargo is not just a shipment - it's a promise delivered without compromise."
                 </p>
               </div>
             </div>
@@ -286,7 +286,7 @@ export default function Home() {
               { title: "ISO Tankers", icon: <Ship size={32} />, desc: "Pan India transportation of bulk liquids and gases using internationally certified ISO tankers.", image: "/iso-tankers-card.png" },
               { title: "Liquid Tankers", icon: <Truck size={32} />, desc: "Efficient and reliable transportation of edible oils, chemicals, and industrial liquids via specialized tankers.", image: "/liquid-tankers-card.png" },
               { title: "Break Bulk Cargo", icon: <Package size={32} />, desc: "Handling and transportation of non-containerized goods that require specialized loading and secure transit.", image: "/break-bulk-card.png" },
-              { title: "OVER DIMENSION CARGO", icon: <Truck size={32} />, desc: "Expertise in moving over-dimensional and heavy-lift cargo that exceeds standard size and weight limits.", image: "/odc-cargo-card.png" },
+              { title: "Over Dimensional Cargo", icon: <Truck size={32} />, desc: "Expertise in moving over-dimensional and heavy-lift cargo that exceeds standard size and weight limits.", image: "/odc-cargo-card.png" },
               { title: "Freight Forwarding", icon: <Globe size={32} />, desc: "End-to-end management of domestic and international shipments via air/sea with single-window support.", image: "/freight-forwarding-card.png" }
             ].map((service, idx) => (
               <motion.div key={idx} whileHover={{ y: -10 }} className="card service-card">
@@ -311,7 +311,7 @@ export default function Home() {
               {[
                 { title: "Pan India & Global Reach", icon: <Globe />, text: "Extensive network spanning road, sea and air routes across India and international destinations - ensuring seamless connectivity for every shipment." },
                 { title: "Timely Delivery", icon: <Clock />, text: "24/7 dedicated operations team with a proven track record of on-time delivery - because your deadlines are our priority." },
-                { title: "20+ Years of Experience", icon: <ShieldCheck />, text: "Over two decades of industry expertise - trusted by leading pharmaceutical, FMCG, and industrial companies across India." }
+                { title: "25+ Years of Experience", icon: <ShieldCheck />, text: "Over two decades of industry expertise - trusted by leading pharmaceutical, FMCG, and industrial companies across India." }
               ].map((feat, i) => (
                 <div key={i} className="feature-item flex gap-4 mb-6">
                   <div className="feature-icon mt-1 text-accent">{feat.icon}</div>

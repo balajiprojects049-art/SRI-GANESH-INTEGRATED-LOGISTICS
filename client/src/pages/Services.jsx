@@ -17,7 +17,7 @@ export default function Services() {
       id: "regular-containers",
       title: "Regular Containers",
       icon: <Package size={40} />,
-      desc: "Reliable and cost-effective Pan India movement of goods using 20ft and 40ft dry containers for FMCG, textiles, and general merchandise.",
+      desc: "Reliable and cost-effective Pan India movement of goods using 20ft to 40ft regular containers for FMCG, textiles, and general merchandise.",
       bg: "/regular-containers-card.png"
     },
     {
@@ -31,7 +31,7 @@ export default function Services() {
       id: "iso-tankers",
       title: "ISO Tankers",
       icon: <Ship size={40} />,
-      desc: "Pan India transportation of bulk liquids and gases using certified ISO tankers. Dedicated trailer movements from port to factory ensure safe, contamination-free handling.",
+      desc: "Pan India transportation of bulk liquids and gases using certified ISO tankers. Dedicated trailer movements between port and industrial facilities ensure safe, contamination-free handling.",
       bg: "/iso-tankers-card.png"
     },
     {

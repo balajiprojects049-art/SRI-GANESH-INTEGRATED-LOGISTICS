@@ -14,7 +14,7 @@ const servicesData = {
     features: [
       "Precise temperature control from -25°C to +25°C",
       "24/7 real-time temperature monitoring",
-      "Multi-temperature zone options",
+      "Multi-zone temperature controls",
       "GPS-enabled fleet for live tracking",
       "Trained and experienced cold chain handlers",
       "Compliance with FSSAI, WHO, and GDP guidelines",
@@ -22,21 +22,21 @@ const servicesData = {
     ],
     industries: ["Pharmaceuticals", "Dairy", "Frozen Foods", "Seafood", "Meat", "Fresh Fruits & Vegetables", "Confectionery", "Other Perishable Goods"],
     industriesTitle: "Industries We Serve",
-    whyChoose: "We understand that even a minor temperature deviation can compromise the quality and safety of your products. Our dedicated cold chain team ensures end-to-end visibility, timely delivery, and zero temperature breach giving you complete peace of mind."
+    whyChoose: "Temperature-sensitive cargo demands absolute precision — and we deliver exactly that. Our specialized cold chain team ensures consistent temperature control, real-time shipment visibility, and reliable on-time performance at every stage. With a strict zero-tolerance approach to breaches, we safeguard your cargo's quality and integrity from origin to destination, every single time."
   },
   "regular-containers": {
     title: "Regular Containers",
     icon: <Package size={48} />,
     image: "/regular-containers-detail.png",
-    subtitle: "Reliable and cost-effective Pan India movement of goods using standard dry containers.",
-    description: "We provide reliable and cost-effective Pan India movement of goods using standard dry containers. Our well-maintained fleet and wide logistics network ensure your cargo reaches its destination safely, on time, and in perfect condition.",
+    subtitle: "Reliable and cost-effective Pan India movement of goods using standard containers.",
+    description: "We provide reliable and cost-effective Pan India transportation of goods using standard containers. Our well-maintained fleet and wide logistics network ensure your cargo reaches its destination safely, on time, and in optimal condition.",
     features: [
-      "Standard 20ft and 40ft dry container movements",
+      "Standard 20ft to 40ft regular container services",
       "Well-maintained and weatherproof containers",
       "GPS-enabled fleet for real-time tracking",
       "Flexible pick-up and delivery scheduling",
       "Safe loading, securing, and unloading of cargo",
-      "Pan India coverage including tier 2 and tier 3 cities",
+      "Pan India coverage, including Tier 2 and Tier 3 cities",
       "Competitive pricing with no hidden charges"
     ],
     industries: ["FMCG", "Textiles", "Electronics", "Automobile Parts", "Retail", "E-commerce", "General Merchandise", "Consumer Goods"],
@@ -48,29 +48,29 @@ const servicesData = {
     icon: <ShieldCheck size={48} />,
     image: "/hazardous-cargo-detail.png",
     subtitle: "Safe, secure, and fully compliant transportation of hazardous materials across India.",
-    description: "We provide safe, secure, and fully compliant transportation of hazardous materials across India, including dedicated trailer movements from port to factory and factory to port. Our operations strictly adhere to all national and international regulatory guidelines, ensuring that dangerous goods are handled, packed, and transported with the highest level of safety and care.",
+    description: "We provide safe, secure, and fully compliant transportation of hazardous materials across India, including dedicated trailer movements between ports and industrial facilities. Our operations strictly adhere to all national and international regulatory guidelines, ensuring that dangerous goods are handled, packed, and transported with the highest level of safety and care.",
     features: [
-      "Dedicated trailer services from port to factory and factory to port",
+      "Dedicated trailer services between ports and industrial facilities",
       "Full compliance with IMDG, ADR, and Indian regulatory standards",
       "Specially trained and certified hazardous cargo handling crew",
       "Proper labelling, marking, and placarding of all shipments",
-      "Emergency response planning and spill containment measures",
+      "Proactive emergency response planning and spill containment measures",
       "Dedicated vehicles equipped for hazardous material transport",
       "Real-time tracking and route monitoring",
       "Complete documentation and regulatory support"
     ],
     industries: ["Chemicals", "Petrochemicals", "Flammable Substances", "Industrial Gases", "Agrochemicals", "Paints & Coatings", "Explosives", "Radioactive Materials"],
     industriesTitle: "Industries We Serve",
-    whyChoose: "Handling hazardous cargo demands expertise, precision, and zero tolerance for error. Our certified team, purpose-built infrastructure, and dedicated port-to-factory trailer operations ensure every dangerous goods shipment is moved with maximum safety, full regulatory compliance, and complete accountability."
+    whyChoose: "Handling hazardous cargo demands expertise, precision, and zero tolerance for error. Our certified team, specialized infrastructure, and dedicated trailer operations ensure every shipment is executed with uncompromising safety, full regulatory compliance, and complete accountability."
   },
   "iso-tankers": {
     title: "ISO Tankers",
     icon: <Ship size={48} />,
     image: "/iso-tankers-detail.png",
     subtitle: "Pan India transportation of bulk liquids and gases using internationally certified ISO tankers.",
-    description: "We provide Pan India transportation of bulk liquids and gases using internationally certified ISO tankers, including dedicated trailer movements from port to factory and factory to port. Our fleet ensures safe, contamination-free, and efficient movement of sensitive bulk materials across industries that demand the highest standards of handling and hygiene.",
+    description: "We provide Pan India transportation of bulk liquids and gases using internationally certified ISO tankers, including dedicated trailer movements between ports and industrial facilities. Our fleet ensures safe, contamination-free, and efficient movement of sensitive bulk materials across industries that demand the highest standards of handling and hygiene.",
     features: [
-      "Dedicated trailer services from port to factory and factory to port",
+      "Dedicated trailer services between ports and industrial facilities",
       "Internationally certified ISO tank containers",
       "Suitable for hazardous and non-hazardous liquid cargo",
       "Contamination-free and hygienic tank maintenance",
@@ -88,20 +88,20 @@ const servicesData = {
     icon: <Truck size={48} />,
     image: "/liquid-tankers-detail.png",
     subtitle: "Efficient and reliable transportation of liquid cargo across India.",
-    description: "We provide efficient and reliable transportation of liquid cargo across India using specialized liquid tankers, including dedicated trailer movements from port to factory and factory to port. Our fleet is designed to handle a diverse range of liquid commodities, ensuring safe, hygienic, and timely delivery from source to destination.",
+    description: "We provide efficient and reliable transportation of liquid cargo across India using specialized liquid tankers, including dedicated trailer movements between ports and industrial facilities. Our fleet is designed to handle a diverse range of liquid commodities, ensuring safe, hygienic, and timely delivery from source to destination.",
     features: [
-      "Dedicated trailer services from port to factory and factory to port",
+      "Dedicated trailer services between ports and industrial facilities",
       "Specialized tankers for food-grade and chemical-grade liquids",
       "Strict hygiene and cleaning protocols between loads",
       "Available in multiple capacities for varied cargo volumes",
-      "Leak-proof and contamination-resistant tank design",
+      "Leak-proof and contamination-resistant tanker design",
       "GPS-enabled fleet for real-time tracking",
       "Experienced drivers trained in liquid cargo handling",
       "Pan India coverage with flexible scheduling"
     ],
     industries: ["Edible Oils", "Beverages", "Dairy", "Chemicals", "Water", "Liquid Fertilizers", "Solvents", "Other Liquid Commodities"],
     industriesTitle: "Industries We Serve",
-    whyChoose: "Liquid cargo demands specialized equipment and careful handling. Our dedicated liquid tanker fleet, port-to-factory trailer operations, strict hygiene standards, and experienced operations team ensure your liquid cargo is transported safely and delivered in perfect condition every time."
+    whyChoose: "Liquid cargo demands specialized equipment and careful handling. With a specialized tanker fleet, dedicated trailer operations, rigorous hygiene protocols, and an experienced operations team, we ensure safe, reliable, and contamination-free delivery — every time."
   },
   "break-bulk-cargo": {
     title: "Break Bulk Cargo",
@@ -123,7 +123,7 @@ const servicesData = {
     whyChoose: "Break bulk cargo requires more than just transportation. It demands careful planning, specialized equipment, and an experienced team. We bring all three together to ensure your cargo, no matter how complex, is handled with precision and delivered without damage."
   },
   "odc-cargo": {
-    title: "Out of Dimension Cargo (ODC)",
+    title: "Over Dimensional Cargo (ODC)",
     icon: <Truck size={48} />,
     image: "/odc-cargo-detail.png",
     subtitle: "Movement of over-dimensional and heavy-lift cargo across India.",
@@ -139,7 +139,7 @@ const servicesData = {
     ],
     industries: ["Infrastructure", "Power & Energy", "Oil & Gas", "Heavy Engineering", "Wind Energy", "Construction", "Defence"],
     industriesTitle: "Industries We Serve",
-    whyChoose: "Moving out-of-dimension cargo is one of the most complex logistics challenges. Our experienced ODC team, specialized fleet, and thorough planning process ensures that even the most demanding heavy-lift movements are executed safely, on time, and without disruption."
+    whyChoose: "Moving over-dimensional cargo is one of the most complex logistics challenges. Our experienced ODC team, specialized fleet, and thorough planning process ensures that even the most demanding heavy-lift movements are executed safely, on time, and without disruption."
   },
   "freight-forwarding": {
     title: "Freight Forwarding",
@@ -237,7 +237,7 @@ export default function ServiceDetail() {
           <h2 className="sd-why-heading">Why Choose <span className="text-accent">Sri Ganesh Integrated Logistics?</span></h2>
           <div className="sd-why-grid mt-12">
             {[
-              { num: "20+", label: "Years Experience" },
+              { num: "25+", label: "Years Experience" },
               { num: "24/7", label: "Operations Support" },
               { num: "Pan India", label: "Network Coverage" },
               { num: "Safety", label: "Reliable & Secure" },

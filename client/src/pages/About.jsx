@@ -38,14 +38,14 @@ export default function About() {
               With over two decades of experience and deep-rooted expertise across every facet of the industry, we are ideally positioned to deliver solutions that give our clients a true competitive advantage in navigating today's complex and ever-evolving logistics landscape.
             </p>
             <p className="text-muted mb-4">
-              Our services span a wide spectrum - from Reefer Containers, Regular Containers, and Hazardous Cargo to ISO Tankers, Liquid Tankers, Break Bulk, Out of Dimension (ODC) Cargo, and Freight Forwarding - touching every critical area of the supply chain.
+              Our services span a wide spectrum — from Reefer Containers, Regular Containers, and Hazardous Cargo to ISO Tankers, Liquid Tankers, Break Bulk, Over Dimensional cargo (ODC), and Freight Forwarding — touching every critical area of the supply chain.
             </p>
             <p className="text-muted mb-8">
               Leveraging a strong and trusted network of industry contacts built over the years, we are well-positioned to provide our clients seamless access to international ship owners, operators, and charters - helping them unlock greater cost efficiencies and smarter freight solutions.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-4">
               <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" size={18} /> Reliable Services</div>
-              <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" size={18} /> 20+ Years of Experience</div>
+              <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" size={18} /> 25+ Years of Experience</div>
               <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" size={18} /> Global Freight Forwarding</div>
               <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" size={18} /> End-to-End Solutions</div>
               <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" size={18} /> Pan India Network</div>
