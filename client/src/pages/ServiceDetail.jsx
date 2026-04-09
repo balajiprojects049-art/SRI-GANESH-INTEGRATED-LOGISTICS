@@ -1,13 +1,13 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Truck, Ship, ShieldCheck, Package, Globe, ArrowRight, CheckCircle, Clock, Thermometer } from 'lucide-react';
+import { Truck, Ship, ShieldCheck, Package, Globe, ArrowRight, CheckCircle, Clock, Thermometer, ThermometerSnowflake, Container, Cylinder, Droplets, Biohazard, PackageOpen, Maximize2 } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import './ServiceDetail.css';
 
 const servicesData = {
   "reefer-containers": {
     title: "Reefer Containers",
-    icon: <Thermometer size={48} />,
+    icon: <ThermometerSnowflake size={48} color="#3b82f6" />,
     image: "/reefer-containers-detail.png",
     subtitle: "Pan India movement of temperature-sensitive products with end-to-end cold chain integrity.",
     description: "We provide Pan India movement of temperature-sensitive products, ensuring seamless and efficient cold chain logistics. Our reefer containers are equipped with advanced temperature control technology, maintaining precise conditions throughout the entire journey from pickup to final delivery.",
@@ -26,7 +26,7 @@ const servicesData = {
   },
   "regular-containers": {
     title: "Regular Containers",
-    icon: <Package size={48} />,
+    icon: <Container size={48} color="#0891b2" />,
     image: "/regular-containers-detail.png",
     subtitle: "Reliable and cost-effective Pan India movement of goods using standard containers.",
     description: "We provide reliable and cost-effective Pan India transportation of goods using standard containers. Our well-maintained fleet and wide logistics network ensure your cargo reaches its destination safely, on time, and in optimal condition.",
@@ -45,7 +45,7 @@ const servicesData = {
   },
   "hazardous-cargo": {
     title: "Hazardous Cargo",
-    icon: <ShieldCheck size={48} />,
+    icon: <Biohazard size={48} color="#ef4444" />,
     image: "/hazardous-cargo-detail.png",
     subtitle: "Safe, secure, and fully compliant transportation of hazardous materials across India.",
     description: "We provide safe, secure, and fully compliant transportation of hazardous materials across India, including dedicated trailer movements between ports and industrial facilities. Our operations strictly adhere to all national and international regulatory guidelines, ensuring that dangerous goods are handled, packed, and transported with the highest level of safety and care.",
@@ -65,7 +65,7 @@ const servicesData = {
   },
   "iso-tankers": {
     title: "ISO Tankers",
-    icon: <Ship size={48} />,
+    icon: <Cylinder size={48} color="#22c55e" />,
     image: "/iso-tankers-detail.png",
     subtitle: "Pan India transportation of bulk liquids and gases using internationally certified ISO tankers.",
     description: "We provide Pan India transportation of bulk liquids and gases using internationally certified ISO tankers, including dedicated trailer movements between ports and industrial facilities. Our fleet ensures safe, contamination-free, and efficient movement of sensitive bulk materials across industries that demand the highest standards of handling and hygiene.",
@@ -85,7 +85,7 @@ const servicesData = {
   },
   "liquid-tankers": {
     title: "Liquid Tankers",
-    icon: <Truck size={48} />,
+    icon: <Droplets size={48} color="#6366f1" />,
     image: "/liquid-tankers-detail.png",
     subtitle: "Efficient and reliable transportation of liquid cargo across India.",
     description: "We provide efficient and reliable transportation of liquid cargo across India using specialized liquid tankers, including dedicated trailer movements between ports and industrial facilities. Our fleet is designed to handle a diverse range of liquid commodities, ensuring safe, hygienic, and timely delivery from source to destination.",
@@ -105,7 +105,7 @@ const servicesData = {
   },
   "break-bulk-cargo": {
     title: "Break Bulk Cargo",
-    icon: <Package size={48} />,
+    icon: <PackageOpen size={48} color="#eab308" />,
     image: "/break-bulk-detail.png",
     subtitle: "Seamless handling and transportation of non-containerized cargo across India.",
     description: "We offer seamless handling and transportation of break bulk cargo across India, managing goods that cannot be containerized due to their size, weight, or nature. Our experienced team and specialized equipment ensure safe loading, secure transit, and efficient delivery of every consignment.",
@@ -124,7 +124,7 @@ const servicesData = {
   },
   "odc-cargo": {
     title: "Over Dimensional Cargo (ODC)",
-    icon: <Truck size={48} />,
+    icon: <Maximize2 size={48} color="#f97316" />,
     image: "/odc-cargo-detail.png",
     subtitle: "Movement of over-dimensional and heavy-lift cargo across India.",
     description: "We specialize in the movement of over-dimensional and heavy-lift cargo across India, handling shipments that exceed standard size and weight limits. Our dedicated ODC team manages every aspect of the move from route surveys and statutory permissions to safe execution and final delivery.",
@@ -143,7 +143,7 @@ const servicesData = {
   },
   "freight-forwarding": {
     title: "Freight Forwarding",
-    icon: <Globe size={48} />,
+    icon: <Globe size={48} color="#a855f7" />,
     image: "/freight-forwarding-detail.png",
     subtitle: "End-to-end freight forwarding across domestic and international routes.",
     description: "We provide end-to-end freight forwarding services, managing the complete movement of goods across domestic and international routes. As a single-window logistics partner, we coordinate every aspect of your shipment ensuring seamless, efficient, and cost-effective delivery from origin to destination.",

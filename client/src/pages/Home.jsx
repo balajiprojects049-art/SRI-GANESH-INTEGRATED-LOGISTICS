@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, Globe, ShieldCheck, Clock, Truck, Ship, Plane, Star, Package, Warehouse, MapPin, Phone, Mail } from 'lucide-react';
+import { ArrowRight, Globe, Clock, Star, MapPin, Phone, Mail, ThermometerSnowflake, Container, Cylinder, Droplets, Biohazard, PackageOpen, Maximize2, ShieldCheck, Truck, Package, Ship } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import './Home.css';
@@ -87,11 +87,6 @@ export default function Home() {
       image: "/regular-containers-card.png",
       text: "We provide reliable and cost-effective PAN India transportation of goods using regular containers. Our services cater to a wide range of industries, including FMCG, textiles, electronics, automobile parts, and general merchandise."
     },
-    "Hazardous Cargo": {
-      route: "/services/hazardous-cargo",
-      image: "/hazardous-cargo-home.png",
-      text: "We provide safe and compliant transportation of hazardous materials across India - including chemicals, flammable substances, industrial gases, and other dangerous goods - adhering to all regulatory safety standards."
-    },
     "ISO Tankers": {
       route: "/services/iso-tankers",
       image: "/iso-tankers-home.png",
@@ -101,6 +96,11 @@ export default function Home() {
       route: "/services/liquid-tankers",
       image: "/liquid-tankers-home.png",
       text: "We provide efficient and reliable transportation of liquid cargo across India, specialized in edible oils, beverages, chemicals, and water - ensuring hygienic, leak-proof, and timely delivery from source to destination."
+    },
+    "Hazardous Cargo": {
+      route: "/services/hazardous-cargo",
+      image: "/hazardous-cargo-home.png",
+      text: "We provide safe and compliant transportation of hazardous materials across India - including chemicals, flammable substances, industrial gases, and other dangerous goods - adhering to all regulatory safety standards."
     },
     "Break Bulk Cargo": {
       route: "/services/break-bulk-cargo",
@@ -212,8 +212,8 @@ export default function Home() {
               <p className="mb-8 text-muted">
                 Driven by a culture of excellence and operational precision, we go beyond simply moving cargo - we build lasting partnerships with our customers and business associates, grounded in integrity, transparency, and a strong commitment to outcomes that matter to your business.
               </p>
-              <div className="mt-12 p-10 glass-dark rounded-lg text-white shadow-2xl relative overflow-hidden" style={{ borderLeft: '6px solid var(--accent-color)' }}>
-                <p className="text-2xl font-bold tracking-tight italic" style={{ lineHeight: '1.4', color: '#ffffff' }}>
+              <div className="mt-12">
+                <p className="text-2xl font-bold tracking-tight italic" style={{ lineHeight: '1.4', color: 'var(--primary-color)' }}>
                   "At Sri Ganesh Integrated Logistics, your cargo is not just a shipment - it's a promise delivered without compromise."
                 </p>
               </div>
@@ -280,14 +280,14 @@ export default function Home() {
 
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { title: "Reefer Containers", icon: <Truck size={32} />, desc: "Pan India movement of temperature-sensitive products, ensuring seamless and efficient cold chain logistics.", image: "/reefer-containers-card.png" },
-              { title: "Regular Containers", icon: <Package size={32} />, desc: "Reliable and cost-effective Pan India movement of goods using standard dry containers.", image: "/regular-containers-card.png" },
-              { title: "Hazardous Cargo", icon: <ShieldCheck size={32} />, desc: "Safe, secure, and fully compliant transportation of hazardous materials including port-to-factory movements.", image: "/hazardous-cargo-card.png" },
-              { title: "ISO Tankers", icon: <Ship size={32} />, desc: "Pan India transportation of bulk liquids and gases using internationally certified ISO tankers.", image: "/iso-tankers-card.png" },
-              { title: "Liquid Tankers", icon: <Truck size={32} />, desc: "Efficient and reliable transportation of edible oils, chemicals, and industrial liquids via specialized tankers.", image: "/liquid-tankers-card.png" },
-              { title: "Break Bulk Cargo", icon: <Package size={32} />, desc: "Handling and transportation of non-containerized goods that require specialized loading and secure transit.", image: "/break-bulk-card.png" },
-              { title: "Over Dimensional Cargo", icon: <Truck size={32} />, desc: "Expertise in moving over-dimensional and heavy-lift cargo that exceeds standard size and weight limits.", image: "/odc-cargo-card.png" },
-              { title: "Freight Forwarding", icon: <Globe size={32} />, desc: "End-to-end management of domestic and international shipments via air/sea with single-window support.", image: "/freight-forwarding-card.png" }
+              { title: "Reefer Containers", icon: <ThermometerSnowflake size={32} color="#3b82f6" />, desc: "Pan India movement of temperature-sensitive products, ensuring seamless and efficient cold chain logistics.", image: "/reefer-containers-card.png" },
+              { title: "Regular Containers", icon: <Container size={32} color="#0891b2" />, desc: "Reliable and cost-effective Pan India movement of goods using standard dry containers.", image: "/regular-containers-card.png" },
+              { title: "ISO Tankers", icon: <Cylinder size={32} color="#22c55e" />, desc: "Pan India transportation of bulk liquids and gases using internationally certified ISO tankers.", image: "/iso-tankers-card.png" },
+              { title: "Liquid Tankers", icon: <Droplets size={32} color="#6366f1" />, desc: "Efficient and reliable transportation of edible oils, chemicals, and industrial liquids via specialized tankers.", image: "/liquid-tankers-card.png" },
+              { title: "Hazardous Cargo", icon: <Biohazard size={32} color="#ef4444" />, desc: "Safe, secure, and fully compliant transportation of hazardous materials including port-to-factory movements.", image: "/hazardous-cargo-card.png" },
+              { title: "Break Bulk Cargo", icon: <PackageOpen size={32} color="#eab308" />, desc: "Handling and transportation of non-containerized goods that require specialized loading and secure transit.", image: "/break-bulk-card.png" },
+              { title: "Over Dimensional Cargo", icon: <Maximize2 size={32} color="#f97316" />, desc: "Expertise in moving over-dimensional and heavy-lift cargo that exceeds standard size and weight limits.", image: "/odc-cargo-card.png" },
+              { title: "Freight Forwarding", icon: <Globe size={32} color="#a855f7" />, desc: "End-to-end management of domestic and international shipments via air/sea with single-window support.", image: "/freight-forwarding-card.png" }
             ].map((service, idx) => (
               <motion.div key={idx} whileHover={{ y: -10 }} className="card service-card">
                 <div className="card-icon">{service.icon}</div>

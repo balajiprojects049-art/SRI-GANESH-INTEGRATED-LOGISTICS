@@ -36,9 +36,9 @@ export default function Footer() {
             <ul className="footer-links">
               <li><Link to="/services/reefer-containers">Reefer Containers</Link></li>
               <li><Link to="/services/regular-containers">Regular Containers</Link></li>
-              <li><Link to="/services/hazardous-cargo">Hazardous Cargo</Link></li>
               <li><Link to="/services/iso-tankers">ISO Tankers</Link></li>
               <li><Link to="/services/liquid-tankers">Liquid Tankers</Link></li>
+              <li><Link to="/services/hazardous-cargo">Hazardous Cargo</Link></li>
               <li><Link to="/services/break-bulk-cargo">Break Bulk Cargo</Link></li>
               <li><Link to="/services/odc-cargo">ODC Cargo</Link></li>
               <li><Link to="/services/freight-forwarding">Freight Forwarding</Link></li>

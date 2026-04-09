@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Truck, Plane, Ship, Package, AlertTriangle, Warehouse, FileCheck, ArrowRight, Globe } from 'lucide-react';
+import { Truck, Plane, Ship, Package, AlertTriangle, Warehouse, FileCheck, ArrowRight, Globe, ThermometerSnowflake, Container, Cylinder, Droplets, Biohazard, PackageOpen, Maximize2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import './Services.css';
@@ -9,56 +9,56 @@ export default function Services() {
     {
       id: "reefer-containers",
       title: "Reefer Containers",
-      icon: <Truck size={40} />,
+      icon: <ThermometerSnowflake size={40} color="#3b82f6" />,
       desc: "Pan India movement of temperature-sensitive products including pharmaceuticals, dairy, and frozen foods. Equipped with advanced temperature control maintaining -25°C to +25°C.",
       bg: "/reefer-containers-card.png"
     },
     {
       id: "regular-containers",
       title: "Regular Containers",
-      icon: <Package size={40} />,
+      icon: <Container size={40} color="#0891b2" />,
       desc: "Reliable and cost-effective Pan India movement of goods using 20ft to 40ft regular containers for FMCG, textiles, and general merchandise.",
       bg: "/regular-containers-card.png"
     },
     {
-      id: "hazardous-cargo",
-      title: "Hazardous Cargo",
-      icon: <AlertTriangle size={40} />,
-      desc: "Safe and compliant transportation of hazardous materials across India. Full compliance with IMDG and ADR standards with specially trained handling crews.",
-      bg: "/hazardous-cargo-card.png"
-    },
-    {
       id: "iso-tankers",
       title: "ISO Tankers",
-      icon: <Ship size={40} />,
+      icon: <Cylinder size={40} color="#22c55e" />,
       desc: "Pan India transportation of bulk liquids and gases using certified ISO tankers. Dedicated trailer movements between port and industrial facilities ensure safe, contamination-free handling.",
       bg: "/iso-tankers-card.png"
     },
     {
       id: "liquid-tankers",
       title: "Liquid Tankers",
-      icon: <Truck size={40} />,
+      icon: <Droplets size={40} color="#6366f1" />,
       desc: "Efficient movement of food-grade and chemical-grade liquids including edible oils and beverages. Specialized tankers ensure hygienic and timely delivery.",
       bg: "/liquid-tankers-card.png"
     },
     {
+      id: "hazardous-cargo",
+      title: "Hazardous Cargo",
+      icon: <Biohazard size={40} color="#ef4444" />,
+      desc: "Safe and compliant transportation of hazardous materials across India. Full compliance with IMDG and ADR standards with specially trained handling crews.",
+      bg: "/hazardous-cargo-card.png"
+    },
+    {
       id: "break-bulk",
       title: "Break Bulk Cargo",
-      icon: <Package size={40} />,
+      icon: <PackageOpen size={40} color="#eab308" />,
       desc: "Seamless handling and transportation of non-containerized cargo like steel, machinery, and project goods requiring specialized loading and security.",
       bg: "/break-bulk-card.png"
     },
     {
       id: "odc-cargo",
       title: "OVER DIMENSION CARGO",
-      icon: <Truck size={40} />,
+      icon: <Maximize2 size={40} color="#f97316" />,
       desc: "Specialized movement of over-dimensional and heavy-lift cargo including infrastructure and power plant equipment, managed by a dedicated ODC team.",
       bg: "/odc-cargo-card.png"
     },
     {
       id: "freight-forwarding",
       title: "Freight Forwarding",
-      icon: <Globe size={40} />,
+      icon: <Globe size={40} color="#a855f7" />,
       desc: "End-to-end management of domestic and international shipments covering air freight, sea freight, and last-mile delivery with single-window support.",
       bg: "/freight-forwarding-card.png"
     }
