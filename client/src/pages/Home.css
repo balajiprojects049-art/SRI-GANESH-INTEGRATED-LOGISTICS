@@ -12,6 +12,7 @@
   align-items: center;
   color: white;
   overflow: hidden;
+  padding-top: 85px; /* Adjust for fixed navbar height */
 }
 
 .hero-bg {

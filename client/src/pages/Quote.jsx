@@ -1,40 +1,58 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Plane, Ship, Truck, Snowflake } from 'lucide-react';
+import { ThermometerSnowflake, Container, Cylinder, Droplets, Biohazard, PackageOpen, Maximize2, Globe } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import './Quote.css';
 
 export default function Quote() {
-  const [shipmentType, setShipmentType] = useState('Air Freight');
+  const [shipmentType, setShipmentType] = useState('Reefer Containers');
   const [submitted, setSubmitted] = useState(false);
 
   const [error, setError] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
-    data.shipmentType = shipmentType;
+    
+    // Construct the professional "box" WhatsApp message using monospaced block
+    const message = "```" + `
+=================================
+       NEW QUOTE REQUEST       
+ SRI GANESH INTEGRATED LOGISTICS 
+=================================
 
-    try {
-      const response = await fetch('http://localhost:5000/api/quote', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
-      if (response.ok) {
-        setSubmitted(true);
-        setTimeout(() => setSubmitted(false), 5000);
-        e.target.reset();
-      } else {
-        setError('Failed to submit. Please try again.');
-        setTimeout(() => setError(''), 5000);
-      }
-    } catch (err) {
-      console.error(err);
-      setError('Server error. Please try again later.');
-      setTimeout(() => setError(''), 5000);
-    }
+[CUSTOMER DETAILS]
+Name          : ${data.name}
+Company       : ${data.companyName}
+Phone         : ${data.phone}
+Email         : ${data.email}
+
+[SHIPMENT DETAILS]
+Service Type  : ${shipmentType}
+Commodity     : ${data.commodity}
+Weight        : ${data.weight} kg
+
+[ROUTING]
+Pickup From   : ${data.pickupLocation}
+Delivery To   : ${data.deliveryLocation}
+
+[REQUIREMENTS]
+${data.requirements}
+` + "```";
+
+    // WhatsApp API URL
+    const whatsappNumber = "919494922080";
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+    // Open WhatsApp in a new tab
+    window.open(whatsappUrl, '_blank');
+    
+    // Show local success state and reset
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 5000);
+    e.target.reset();
   };
 
   return (
@@ -63,10 +81,14 @@ export default function Quote() {
                 <h3 className="mb-4 text-xl border-b pb-2">1. Select Shipment Type</h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {[
-                    { id: 'Air Freight', icon: <Plane /> },
-                    { id: 'Ocean Freight', icon: <Ship /> },
-                    { id: 'Door-to-Door', icon: <Truck /> },
-                    { id: 'Reefer', icon: <Snowflake /> }
+                    { id: 'Reefer Containers', icon: <ThermometerSnowflake /> },
+                    { id: 'Regular Containers', icon: <Container /> },
+                    { id: 'ISO Tankers', icon: <Cylinder /> },
+                    { id: 'Liquid Tankers', icon: <Droplets /> },
+                    { id: 'Hazardous Cargo', icon: <Biohazard /> },
+                    { id: 'Break Bulk Cargo', icon: <PackageOpen /> },
+                    { id: 'ODC Cargo', icon: <Maximize2 /> },
+                    { id: 'Freight Forwarding', icon: <Globe /> }
                   ].map(type => (
                     <div 
                       key={type.id}

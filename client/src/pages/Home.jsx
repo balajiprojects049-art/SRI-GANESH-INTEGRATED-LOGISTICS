@@ -107,7 +107,7 @@ export default function Home() {
       image: "/break-bulk-home.png",
       text: "We offer seamless handling and transportation of break bulk cargo managing goods that cannot be containerized due to their size, weight, or nature. We cater to industries like steel, construction, and large machinery."
     },
-    "OVER DIMENSION CARGO": {
+    "Over Dimensional Cargo": {
       route: "/services/odc-cargo",
       image: "/odc-cargo-home.png",
       text: "We specialize in the movement of over-dimensional and heavy-lift cargo across India (ODC). Our services cater to heavy infrastructure, power, oil & gas, and mechanical engineering projects."
@@ -115,7 +115,7 @@ export default function Home() {
     "Freight Forwarding": {
       route: "/services/freight-forwarding",
       image: "/freight-forwarding-home.png",
-      text: "We provide end-to-end freight forwarding services, managing the complete movement of goods across domestic and international routes, covering air freight, sea freight, and last-mile delivery."
+      text: "We provide end-to-end freight forwarding services, managing the complete movement of goods across domestic and international routes. Our services cover air freight, sea freight, and last-mile delivery — offering a single-window solution for businesses."
     }
   };
 
@@ -213,7 +213,7 @@ export default function Home() {
                 Driven by a culture of excellence and operational precision, we go beyond simply moving cargo - we build lasting partnerships with our customers and business associates, grounded in integrity, transparency, and a strong commitment to outcomes that matter to your business.
               </p>
               <div className="mt-12">
-                <p className="text-2xl font-bold tracking-tight italic" style={{ lineHeight: '1.4', color: 'var(--primary-color)' }}>
+                <p className="text-2xl font-bold tracking-tight italic" style={{ lineHeight: '1.4', color: 'var(--primary-color)', borderLeft: '4px solid var(--accent-color)', paddingLeft: '1.5rem' }}>
                   "At Sri Ganesh Integrated Logistics, your cargo is not just a shipment - it's a promise delivered without compromise."
                 </p>
               </div>
@@ -287,7 +287,7 @@ export default function Home() {
               { title: "Hazardous Cargo", icon: <Biohazard size={32} color="#ef4444" />, desc: "Safe, secure, and fully compliant transportation of hazardous materials including port-to-factory movements.", image: "/hazardous-cargo-card.png" },
               { title: "Break Bulk Cargo", icon: <PackageOpen size={32} color="#eab308" />, desc: "Handling and transportation of non-containerized goods that require specialized loading and secure transit.", image: "/break-bulk-card.png" },
               { title: "Over Dimensional Cargo", icon: <Maximize2 size={32} color="#f97316" />, desc: "Expertise in moving over-dimensional and heavy-lift cargo that exceeds standard size and weight limits.", image: "/odc-cargo-card.png" },
-              { title: "Freight Forwarding", icon: <Globe size={32} color="#a855f7" />, desc: "End-to-end management of domestic and international shipments via air/sea with single-window support.", image: "/freight-forwarding-card.png" }
+              { title: "Freight Forwarding", icon: <Globe size={32} color="#a855f7" />, desc: "End-to-end freight forwarding services managing the complete movement of goods across domestic and international routes.", image: "/freight-forwarding-card.png" }
             ].map((service, idx) => (
               <motion.div key={idx} whileHover={{ y: -10 }} className="card service-card">
                 <div className="card-icon">{service.icon}</div>

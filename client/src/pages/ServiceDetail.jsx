@@ -146,7 +146,7 @@ const servicesData = {
     icon: <Globe size={48} color="#a855f7" />,
     image: "/freight-forwarding-detail.png",
     subtitle: "End-to-end freight forwarding across domestic and international routes.",
-    description: "We provide end-to-end freight forwarding services, managing the complete movement of goods across domestic and international routes. As a single-window logistics partner, we coordinate every aspect of your shipment ensuring seamless, efficient, and cost-effective delivery from origin to destination.",
+    description: "We provide end-to-end freight forwarding services, managing the complete movement of goods across domestic and international routes. As a single-window logistics partner, we coordinate every aspect of your shipment — ensuring seamless, efficient, and cost-effective delivery from origin to destination.",
     features: [
       "Air freight solutions for time-critical shipments",
       "Sea freight options including FCL and LCL shipments",
@@ -158,7 +158,7 @@ const servicesData = {
     ],
     industries: ["Air Freight", "Sea Freight", "Last-Mile Delivery"],
     industriesTitle: "Services We Cover",
-    whyChoose: "Navigating the complexities of domestic and international freight requires an experienced partner you can trust. We bring together a strong carrier network, deep industry expertise, and a customer-first approach ensuring your goods move smoothly, efficiently, and without unnecessary delays."
+    whyChoose: "Navigating the complexities of domestic and international freight requires an experienced partner you can trust. We bring together a strong carrier network, deep industry expertise, and a customer-first approach — ensuring your goods move smoothly, efficiently, and without unnecessary delays."
   }
 };
 

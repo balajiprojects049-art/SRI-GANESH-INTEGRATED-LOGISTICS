@@ -50,7 +50,7 @@ export default function Services() {
     },
     {
       id: "odc-cargo",
-      title: "OVER DIMENSION CARGO",
+      title: "Over Dimensional Cargo",
       icon: <Maximize2 size={40} color="#f97316" />,
       desc: "Specialized movement of over-dimensional and heavy-lift cargo including infrastructure and power plant equipment, managed by a dedicated ODC team.",
       bg: "/odc-cargo-card.png"
@@ -59,7 +59,7 @@ export default function Services() {
       id: "freight-forwarding",
       title: "Freight Forwarding",
       icon: <Globe size={40} color="#a855f7" />,
-      desc: "End-to-end management of domestic and international shipments covering air freight, sea freight, and last-mile delivery with single-window support.",
+      desc: "We provide end-to-end freight forwarding services, managing the complete movement of goods across domestic and international routes. Our services cover air freight, sea freight, and last-mile delivery — offering a single-window solution for businesses.",
       bg: "/freight-forwarding-card.png"
     }
   ];

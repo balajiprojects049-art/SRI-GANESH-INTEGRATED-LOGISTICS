@@ -91,8 +91,8 @@
   font-weight: 600;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:not(.btn):hover,
+.nav-links a:not(.btn).active {
   color: var(--accent-color) !important;
 }
 

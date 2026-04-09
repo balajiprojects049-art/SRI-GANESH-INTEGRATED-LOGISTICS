@@ -8,7 +8,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Quote from './pages/Quote';
-import FreightForwarding from './pages/FreightForwarding';
+// import FreightForwarding from './pages/FreightForwarding';
 import ProjectForwarding from './pages/ProjectForwarding';
 import Transportation from './pages/Transportation';
 import WarehousingPage from './pages/WarehousingPage';
@@ -29,7 +29,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/quote" element={<Quote />} />
           <Route path="/services/:id" element={<ServiceDetail />} />
-          <Route path="/services/freight-forwarding" element={<FreightForwarding />} />
+          {/* <Route path="/services/freight-forwarding" element={<FreightForwarding />} /> */}
           <Route path="/services/project-forwarding" element={<ProjectForwarding />} />
           <Route path="/services/transportation" element={<Transportation />} />
           <Route path="/services/warehousing" element={<WarehousingPage />} />
