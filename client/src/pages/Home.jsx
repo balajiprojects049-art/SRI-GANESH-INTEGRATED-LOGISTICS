@@ -373,11 +373,11 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { city: "Hyderabad", label: "Head Office", address: "6-3-852/2/B4, Plot No. 10, Aparajitha Colony, Ameerpet, Hyderabad, Telengana - 500016.", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
-              { city: "Vishakapatnam", label: "Branch Office", address: "10-37-27, Rich House, Ram Nagar, Vishakapatnam - 530002, Andhra Pradesh, India", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
-              { city: "Mumbai", label: "Branch Office", address: "54, Shalaka, D. N Nagar, Andheri (W), Mumbai - 400 053", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
-              { city: "Chennai", label: "Branch Office", address: "Ramarau Buildings, 3rd Floor, 299/144, Thambuchetty Street, Chennai - 600001", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
-              { city: "Bangalore", label: "Branch Office", address: "2555, 13th Mai, 9th Cross, E Nagar, Sahakarnagar, Bangalore - 560092", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
+              { city: "Hyderabad", label: "Head Office", address: "6-3-852/2/B4, Plot No. 10, Aparajitha Colony, Ameerpet, Hyderabad, Telangana - 500016.", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
+              { city: "Visakhapatnam", label: "Branch Office", address: "10-37-27, Rich House, Ram Nagar, Visakhapatnam - 530002, Andhra Pradesh, India", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
+              { city: "Mumbai", label: "Branch Office", address: "54, Shalaka, D.N. Nagar, Andheri (West), Mumbai - 400053", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
+              { city: "Chennai", label: "Branch Office", address: "Rama Rau Buildings, 3rd Floor, 299/144, Thambu Chetty Street, Chennai - 600001", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
+              { city: "Bangalore", label: "Branch Office", address: "2555, 13th Main, 9th Cross, E Block, Sahakar Nagar, Bangalore - 560092", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
             ].map((loc, i) => (
               <motion.div key={i} whileHover={{ y: -6 }} className="office-card">
                 <div className="office-card-title">

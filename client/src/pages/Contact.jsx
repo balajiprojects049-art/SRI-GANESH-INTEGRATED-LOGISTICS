@@ -12,35 +12,35 @@ export default function Contact() {
     {
       city: "Hyderabad",
       label: "Head Office",
-      address: "6-3-852/2/B4, Plot No. 10, Aparajitha Colony, Ameerpet, Hyderabad, Telengana - 500016.",
+      address: "6-3-852/2/B4, Plot No. 10, Aparajitha Colony, Ameerpet, Hyderabad, Telangana - 500016.",
       phone: "9494922080, 9849356197",
       email: "contact.sgilogistics@gmail.com"
     },
     {
-      city: "Vishakapatnam",
+      city: "Visakhapatnam",
       label: "Branch Office",
-      address: "10-37-27, Rich House, Ram Nagar, Vishakapatnam - 530002, Andhra Pradesh, India",
+      address: "10-37-27, Rich House, Ram Nagar, Visakhapatnam - 530002, Andhra Pradesh, India",
       phone: "9494922080, 9849356197",
       email: "contact.sgilogistics@gmail.com"
     },
     {
       city: "Mumbai",
       label: "Branch Office",
-      address: "54, Shalaka, D. N Nagar, Andheri (W), Mumbai - 400 053",
+      address: "54, Shalaka, D.N. Nagar, Andheri (West), Mumbai - 400053",
       phone: "9494922080, 9849356197",
       email: "contact.sgilogistics@gmail.com"
     },
     {
       city: "Chennai",
       label: "Branch Office",
-      address: "Ramarau Buildings, 3rd Floor, 299/144, Thambuchetty Street, Chennai - 600001",
+      address: "Rama Rau Buildings, 3rd Floor, 299/144, Thambu Chetty Street, Chennai - 600001",
       phone: "9494922080, 9849356197",
       email: "contact.sgilogistics@gmail.com"
     },
     {
       city: "Bangalore",
       label: "Branch Office",
-      address: "2555, 13th Mai, 9th Cross, E Block, Sahakarnagar, Bangalore - 560092",
+      address: "2555, 13th Main, 9th Cross, E Block, Sahakar Nagar, Bangalore - 560092",
       phone: "9494922080, 9849356197",
       email: "contact.sgilogistics@gmail.com"
     },
@@ -162,7 +162,7 @@ export default function Contact() {
                 <div className="contact-icon-box"><MapPin size={22} /></div>
                 <div className="contact-info-text">
                   <h4>Head Office Address</h4>
-                  <p>6-3-852/2/B4, Plot No. 10, Aparajitha Colony,<br/>Ameerpet, Hyderabad, Telengana - 500016.</p>
+                  <p>6-3-852/2/B4, Plot No. 10, Aparajitha Colony,<br/>Ameerpet, Hyderabad, Telangana - 500016.</p>
                 </div>
               </div>
 
@@ -211,7 +211,7 @@ export default function Contact() {
       {/* Embedded Map - Ameerpet Hyderabad */}
       <section className="map-section w-full" style={{ height: '400px' }}>
         <iframe 
-          src="https://maps.google.com/maps?q=6-3-852/2/B4,Plot+No.+10,Aparajitha+Colony,Ameerpet,Hyderabad,Telengana-500016&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+          src="https://maps.google.com/maps?q=6-3-852/2/B4,Plot+No.+10,Aparajitha+Colony,Ameerpet,Hyderabad,Telangana-500016&t=&z=15&ie=UTF8&iwloc=&output=embed" 
           width="100%" 
           height="400" 
           style={{border:0}} 
