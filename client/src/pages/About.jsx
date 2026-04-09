@@ -38,7 +38,7 @@ export default function About() {
               With over two decades of experience and deep-rooted expertise across every facet of the industry, we are ideally positioned to deliver solutions that give our clients a true competitive advantage in navigating today's complex and ever-evolving logistics landscape.
             </p>
             <p className="text-muted mb-4">
-              Our services span the full spectrum — encompassing Reefer Containers, Regular Containers, ISO Tankers, Liquid Tankers, specialized handling and transportation of Hazardous Cargo, Break Bulk Cargo, Over Dimensional Cargo (ODC), and end-to-end Freight Forwarding solutions — addressing every critical touchpoint to keep your business moving without a single disruption            </p>
+              Our services span the full spectrum — encompassing Reefer Containers, Regular Containers, ISO Tankers, Liquid Tankers, specialized handling and transportation of Hazardous Cargo, Break Bulk Cargo, Over Dimensional Cargo, and end-to-end Freight Forwarding solutions — addressing every critical touchpoint to keep your business moving without a single disruption            </p>
             <p className="text-muted mb-8">
               Leveraging a strong and trusted network of industry contacts built over the years, we are well-positioned to provide our clients seamless access to international ship owners, operators, and charters - helping them unlock greater cost efficiencies and smarter freight solutions.
             </p>

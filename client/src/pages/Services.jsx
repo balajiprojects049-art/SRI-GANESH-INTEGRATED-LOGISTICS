@@ -42,7 +42,7 @@ export default function Services() {
       bg: "/hazardous-cargo-card.png"
     },
     {
-      id: "break-bulk",
+      id: "break-bulk-cargo",
       title: "Break Bulk Cargo",
       icon: <PackageOpen size={40} color="#eab308" />,
       desc: "Seamless handling and transportation of non-containerized cargo like steel, machinery, and project goods requiring specialized loading and security.",

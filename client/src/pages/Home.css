@@ -5,14 +5,14 @@
 }
 
 .hero {
-  height: 100vh;
-  min-height: 600px;
+  min-height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
   color: white;
   overflow: hidden;
   padding-top: 85px; /* Adjust for fixed navbar height */
+  padding-bottom: 80px; /* Bottom spacing to prevent clipping */
 }
 
 .hero-bg {
@@ -222,6 +222,18 @@
 .text-center { text-align: center; }
 
 @media (max-width: 768px) {
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 100px; /* Make room for mobile bottom nav */
+  }
+
+  .hero-desc {
+    font-size: 1.05rem; /* Slightly smaller text on mobile */
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
   .gap-8 { gap: 1.5rem; }
   .gap-16 { gap: 2rem; }
 
@@ -497,7 +509,8 @@ section + section {
 
   .welcome-tab-btn {
     white-space: nowrap;
-    min-width: 160px;
+    min-width: max-content; /* Ensure it fits the content */
+    flex-shrink: 0; /* Prevent flexbox from squeezing the buttons */
     text-align: center !important;
     padding: 0.8rem 1rem !important;
     border-radius: 4px;

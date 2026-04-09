@@ -110,7 +110,7 @@ export default function Home() {
     "Over Dimensional Cargo": {
       route: "/services/odc-cargo",
       image: "/odc-cargo-home.png",
-      text: "We specialize in the movement of over-dimensional and heavy-lift cargo across India (ODC). Our services cater to heavy infrastructure, power, oil & gas, and mechanical engineering projects."
+      text: "We specialize in the movement of over-dimensional and heavy-lift cargo across India. Our services cater to heavy infrastructure, power, oil & gas, and mechanical engineering projects."
     },
     "Freight Forwarding": {
       route: "/services/freight-forwarding",
@@ -159,7 +159,7 @@ export default function Home() {
               <span style={{ color: '#8bbce3' }}>Globally.</span>
             </motion.h1>
             <motion.p variants={itemVariants} className="hero-desc">
-              Sri Ganesh Integrated Logistics is your complete one-stop partner for all business logistics needs. We provide a comprehensive range of services — from transportation via Reefer Containers, Regular Containers, ISO Tankers, and Liquid Tankers, to expert handling and movement of Hazardous Cargo, Break Bulk Cargo, and Over Dimensional Cargo (ODC), along with end-to-end Freight Forwarding services. From the first mile to the last, we manage every leg of your shipment — so your business never misses a beat.
+              Sri Ganesh Integrated Logistics is your complete one-stop partner for all business logistics needs. We provide a comprehensive range of services — from transportation via Reefer Containers, Regular Containers, ISO Tankers, and Liquid Tankers, to expert handling and movement of Hazardous Cargo, Break Bulk Cargo, and Over Dimensional Cargo, along with end-to-end Freight Forwarding services. From the first mile to the last, we manage every leg of your shipment — so your business never misses a beat.
             </motion.p>
             <motion.div variants={itemVariants} className="hero-ctas flex gap-4 mt-8">
               <Link to="/quote" className="btn btn-primary">Get Quote</Link>
@@ -204,7 +204,7 @@ export default function Home() {
                 Your complete, single-source partner for all logistics and transportation needs across India and beyond.
               </p>
               <p className="mb-6 text-muted">
-                We offer a comprehensive range of logistics services — spanning Reefer Containers, Regular Containers, ISO Tankers, Liquid Tankers, specialized handling and transportation of Hazardous Cargo, Break Bulk Cargo, and Over Dimensional Cargo (ODC), along with complete Freight Forwarding solutions — each tailored to meet the unique demands of every industry we serve.
+                We offer a comprehensive range of logistics services — spanning Reefer Containers, Regular Containers, ISO Tankers, Liquid Tankers, specialized handling and transportation of Hazardous Cargo, Break Bulk Cargo, and Over Dimensional Cargo, along with complete Freight Forwarding solutions — each tailored to meet the unique demands of every industry we serve.
               </p>
               <p className="mb-6 text-muted">
                 From temperature-controlled cold chain logistics to the safe movement of hazardous materials, from oversized heavy-lift cargo to seamless international freight forwarding, we have the expertise, infrastructure, and commitment to handle it all under one roof.
@@ -284,7 +284,7 @@ export default function Home() {
               { title: "Regular Containers", icon: <Container size={32} color="#0891b2" />, desc: "Reliable and cost-effective Pan India movement of goods using standard dry containers.", image: "/regular-containers-card.png" },
               { title: "ISO Tankers", icon: <Cylinder size={32} color="#22c55e" />, desc: "Pan India transportation of bulk liquids and gases using internationally certified ISO tankers.", image: "/iso-tankers-card.png" },
               { title: "Liquid Tankers", icon: <Droplets size={32} color="#6366f1" />, desc: "Efficient and reliable transportation of edible oils, chemicals, and industrial liquids via specialized tankers.", image: "/liquid-tankers-card.png" },
-              { title: "Hazardous Cargo", icon: <Biohazard size={32} color="#ef4444" />, desc: "Safe, secure and fully compliant transportation of hazardous materials between port and industrial facilities", image: "/hazardous-cargo-card.png" },
+              { title: "Hazardous Cargo", icon: <Biohazard size={32} color="#ef4444" />, desc: "Safe, secure and fully compliant transportation of hazardous materials between ports and industrial facilities", image: "/hazardous-cargo-card.png" },
               { title: "Break Bulk Cargo", icon: <PackageOpen size={32} color="#eab308" />, desc: "Handling and transportation of non-containerized goods that require specialized loading and secure transit.", image: "/break-bulk-card.png" },
               { title: "Over Dimensional Cargo", icon: <Maximize2 size={32} color="#f97316" />, desc: "Expertise in moving over-dimensional and heavy-lift cargo that exceeds standard size and weight limits.", image: "/odc-cargo-card.png" },
               { title: "Freight Forwarding", icon: <Globe size={32} color="#a855f7" />, desc: "Specialized management of domestic and international freight — covering air, sea, and land movement of goods across all routes, handled by a dedicated freight forwarding team.", image: "/freight-forwarding-card.png" }

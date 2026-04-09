@@ -81,7 +81,7 @@ const servicesData = {
     ],
     industries: ["Chemicals", "Petrochemicals", "Food-Grade Liquids", "Industrial Gases", "Pharmaceuticals", "Agricultural Liquids"],
     industriesTitle: "Industries We Serve",
-    whyChoose: "Our ISO tankers are built to handle the most demanding bulk liquid and gas transportation requirements. With certified equipment, dedicated port-to-factory trailer operations, and a strong Pan India network, we deliver your cargo safely, efficiently, and on schedule."
+    whyChoose: "Our ISO tankers are built to handle the most demanding bulk liquid and gas transportation requirements. With certified equipment, dedicated trailer operations, and a strong Pan India network, we deliver your cargo safely, efficiently, and on schedule."
   },
   "liquid-tankers": {
     title: "Liquid Tankers",
@@ -123,7 +123,7 @@ const servicesData = {
     whyChoose: "Break bulk cargo requires more than just transportation. It demands careful planning, specialized equipment, and an experienced team. We bring all three together to ensure your cargo, no matter how complex, is handled with precision and delivered without damage."
   },
   "odc-cargo": {
-    title: "Over Dimensional Cargo (ODC)",
+    title: "Over Dimensional Cargo",
     icon: <Maximize2 size={48} color="#f97316" />,
     image: "/odc-cargo-detail.png",
     subtitle: "Movement of over-dimensional and heavy-lift cargo across India.",

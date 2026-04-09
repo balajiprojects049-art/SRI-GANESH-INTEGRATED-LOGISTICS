@@ -5,7 +5,7 @@ import './ServiceDetail.css';
 
 export default function ProjectForwarding() {
   const features = [
-    "Turn-key solutions for Super Large & Over-Dimensional Cargo (ODC)",
+    "Turn-key solutions for Super Large & Over-Dimensional Cargo",
     "Dedicated on-site project management teams",
     "Multi-modal transportation: Sea, Air, Road & Rail",
     "Heavy lift & crane operations management",

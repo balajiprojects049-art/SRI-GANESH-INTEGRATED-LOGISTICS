@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="footer-col">
             <h3 className="text-accent mb-4">Sri Ganesh Integrated Logistics</h3>
             <p className="text-muted mb-4">
-            Established in 2001, we are one-stop solution for all your business logistics needs serving customers across India and globally.             </p>
+              Established in 2001, we are your one-stop solution for all your business logistics needs, serving customers across India and globally.            </p>
             <div className="social-links flex gap-4">
               <a href="#" className="social-icon"><Facebook size={20} /></a>
               <a href="#" className="social-icon"><Twitter size={20} /></a>
