@@ -59,7 +59,7 @@ export default function Services() {
       id: "freight-forwarding",
       title: "Freight Forwarding",
       icon: <Globe size={40} color="#a855f7" />,
-      desc: "We provide end-to-end freight forwarding services, managing the complete movement of goods across domestic and international routes. Our services cover air freight, sea freight, and last-mile delivery — offering a single-window solution for businesses.",
+      desc: "Specialized management of domestic and international freight — covering air, sea, and land movement of goods across all routes, handled by a dedicated freight forwarding team.",
       bg: "/freight-forwarding-card.png"
     }
   ];

@@ -115,7 +115,7 @@ export default function Home() {
     "Freight Forwarding": {
       route: "/services/freight-forwarding",
       image: "/freight-forwarding-home.png",
-      text: "We provide end-to-end freight forwarding services, managing the complete movement of goods across domestic and international routes. Our services cover air freight, sea freight, and last-mile delivery — offering a single-window solution for businesses."
+      text: "Specialized management of domestic and international freight — covering air, sea, and land movement of goods across all routes, handled by a dedicated freight forwarding team."
     }
   };
 
@@ -287,7 +287,7 @@ export default function Home() {
               { title: "Hazardous Cargo", icon: <Biohazard size={32} color="#ef4444" />, desc: "Safe, secure, and fully compliant transportation of hazardous materials including port-to-factory movements.", image: "/hazardous-cargo-card.png" },
               { title: "Break Bulk Cargo", icon: <PackageOpen size={32} color="#eab308" />, desc: "Handling and transportation of non-containerized goods that require specialized loading and secure transit.", image: "/break-bulk-card.png" },
               { title: "Over Dimensional Cargo", icon: <Maximize2 size={32} color="#f97316" />, desc: "Expertise in moving over-dimensional and heavy-lift cargo that exceeds standard size and weight limits.", image: "/odc-cargo-card.png" },
-              { title: "Freight Forwarding", icon: <Globe size={32} color="#a855f7" />, desc: "End-to-end freight forwarding services managing the complete movement of goods across domestic and international routes.", image: "/freight-forwarding-card.png" }
+              { title: "Freight Forwarding", icon: <Globe size={32} color="#a855f7" />, desc: "Specialized management of domestic and international freight — covering air, sea, and land movement of goods across all routes, handled by a dedicated freight forwarding team.", image: "/freight-forwarding-card.png" }
             ].map((service, idx) => (
               <motion.div key={idx} whileHover={{ y: -10 }} className="card service-card">
                 <div className="card-icon">{service.icon}</div>
