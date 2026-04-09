@@ -50,7 +50,7 @@ export default function About() {
               <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" size={18} /> Pan India Network</div>
               <div className="flex gap-2 items-center text-primary font-bold"><CheckCircle className="text-accent" size={18} /> Cold Chain Specialists</div>
             </div>
-            <p className="mt-16 p-8 bg-white border-l-4 border-accent italic text-lg shadow-sm">
+            <p className="italic text-xl" style={{ marginTop: '2.5rem', borderLeft: '4px solid var(--accent-color)', paddingLeft: '1.5rem', color: 'var(--primary-color)', lineHeight: '1.6' }}>
               "At Sri Ganesh Integrated Logistics, we don't just move cargo - we deliver trust, reliability, and over two decades of logistics excellence, because your business deserves a partner that goes the extra mile."
             </p>
           </motion.div>
