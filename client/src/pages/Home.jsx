@@ -140,13 +140,13 @@ export default function Home() {
       <section className="hero">
         <div className="hero-overlay"></div>
         <AnimatePresence mode='wait'>
-          <motion.div 
+          <motion.div
             key={currentHero}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1.5 }}
-            className="hero-bg" 
+            className="hero-bg"
             style={{ backgroundImage: `url(${heroImages[currentHero]})` }}
           ></motion.div>
         </AnimatePresence>
@@ -229,7 +229,7 @@ export default function Home() {
             <h2 className="section-title">Explore Our <span className="text-accent">Solutions</span></h2>
             <p className="text-muted">Select a service to learn more about our specialized capabilities</p>
           </div>
-          
+
           <div className="interactive-grid">
             {/* Middle: Image + Description */}
             <div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -373,11 +373,11 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { city: "Hyderabad", state: "Telangana", country: "India", pincode: "500016", label: "Head Office", address: "6-3-852/2/B4, Plot No. 10, Aparajitha Colony, Ameerpet", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
-              { city: "Visakhapatnam", state: "Andhra Pradesh", country: "India", pincode: "530002", label: "Branch Office", address: "10-37-27, Rich House, Ram Nagar", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
-              { city: "Mumbai", state: "Maharashtra", country: "India", pincode: "400053", label: "Branch Office", address: "54, Shalaka, D.N. Nagar, Andheri (West)", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
-              { city: "Chennai", state: "Tamil Nadu", country: "India", pincode: "600001", label: "Branch Office", address: "Rama Rau Buildings, 3rd Floor, 299/144, Thambu Chetty Street", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
-              { city: "Bangalore", state: "Karnataka", country: "India", pincode: "560092", label: "Branch Office", address: "2555, 13th Main, 9th Cross, E Block, Sahakara Nagar", phone: "9494922080, 9849356197", email: "contact.sgilogistics@gmail.com" },
+              { city: "Hyderabad", state: "Telangana", country: "India", pincode: "500016", label: "Head Office", address: "6-3-852/2/B4, Plot No. 10, Aparajitha Colony, Ameerpet", phone: "9494922080, 9849356197", email: "contact@sgilogistics.in" },
+              { city: "Visakhapatnam", state: "Andhra Pradesh", country: "India", pincode: "530002", label: "Branch Office", address: "10-37-27, Rich House, Ram Nagar", phone: "9494922080, 9849356197", email: "contact@sgilogistics.in" },
+              { city: "Mumbai", state: "Maharastra", country: "India", pincode: "400053", label: "Branch Office", address: "54, Shalaka, D.N. Nagar, Andheri (West)", phone: "9494922080, 9849356197", email: "contact@sgilogistics.in" },
+              { city: "Chennai", state: "Tamil Nadu", country: "India", pincode: "600001", label: "Branch Office", address: "Rama Rau Buildings, 3rd Floor, 299/144, Thambu Chetty Street", phone: "9494922080, 9849356197", email: "contact@sgilogistics.in" },
+              { city: "Bangalore", state: "Karnataka", country: "India", pincode: "560092", label: "Branch Office", address: "2555, 13th Main, 9th Cross, E Block, Sahakara Nagar", phone: "9494922080, 9849356197", email: "contact@sgilogistics.in" },
             ].map((loc, i) => (
               <motion.div key={i} whileHover={{ y: -6 }} className="office-card">
                 <div className="office-card-title">
@@ -386,7 +386,7 @@ export default function Home() {
                 </div>
                 <div className="office-card-row align-top">
                   <MapPin size={14} className="mt-1" />
-                  <span>{loc.address},<br/>{loc.city}, {loc.state}, {loc.country} - {loc.pincode}</span>
+                  <span>{loc.address},<br />{loc.city}, {loc.state}, {loc.country} - {loc.pincode}</span>
                 </div>
                 {loc.phone && (
                   <div className="office-card-row">

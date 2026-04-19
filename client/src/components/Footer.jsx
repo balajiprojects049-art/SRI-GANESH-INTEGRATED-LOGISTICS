@@ -58,7 +58,7 @@ export default function Footer() {
               </li>
               <li className="flex gap-2 mb-3">
                 <Mail className="text-accent shrink-0" size={20} />
-                <span>contact.sgilogistics@gmail.com</span>
+                <span>contact@sgilogistics.in</span>
               </li>
             </ul>
           </div>

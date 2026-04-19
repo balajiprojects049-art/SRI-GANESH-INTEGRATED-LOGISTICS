@@ -31,7 +31,7 @@ Email         : ${data.email}
 [SHIPMENT DETAILS]
 Service Type  : ${shipmentType}
 Commodity     : ${data.commodity}
-Weight        : ${data.weight} kg
+Weight        : ${data.weight} MT
 
 [ROUTING]
 Pickup From   : ${data.pickupLocation}
@@ -122,7 +122,7 @@ ${data.requirements}
                 <h3 className="mb-4 text-xl border-b pb-2">3. Cargo Details</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="form-group">
-                    <label className="form-label">Weight (kg)</label>
+                    <label className="form-label">Weight (MT)</label>
                     <input type="number" name="weight" className="form-control" placeholder="e.g. 500" required />
                   </div>
                   <div className="form-group">

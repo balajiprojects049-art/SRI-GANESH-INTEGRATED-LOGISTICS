@@ -17,7 +17,7 @@ export default function Contact() {
       label: "Head Office",
       address: "6-3-852/2/B4, Plot No. 10, Aparajitha Colony, Ameerpet",
       phone: "9494922080, 9849356197",
-      email: "contact.sgilogistics@gmail.com"
+      email: "contact@sgilogistics.in"
     },
     {
       city: "Visakhapatnam",
@@ -27,17 +27,17 @@ export default function Contact() {
       label: "Branch Office",
       address: "10-37-27, Rich House, Ram Nagar",
       phone: "9494922080, 9849356197",
-      email: "contact.sgilogistics@gmail.com"
+      email: "contact@sgilogistics.in"
     },
     {
       city: "Mumbai",
-      state: "Maharashtra",
+      state: "Maharastra",
       country: "India",
       pincode: "400053",
       label: "Branch Office",
       address: "54, Shalaka, D.N. Nagar, Andheri (West)",
       phone: "9494922080, 9849356197",
-      email: "contact.sgilogistics@gmail.com"
+      email: "contact@sgilogistics.in"
     },
     {
       city: "Chennai",
@@ -47,7 +47,7 @@ export default function Contact() {
       label: "Branch Office",
       address: "Rama Rau Buildings, 3rd Floor, 299/144, Thambu Chetty Street",
       phone: "9494922080, 9849356197",
-      email: "contact.sgilogistics@gmail.com"
+      email: "contact@sgilogistics.in"
     },
     {
       city: "Bangalore",
@@ -57,7 +57,7 @@ export default function Contact() {
       label: "Branch Office",
       address: "2555, 13th Main, 9th Cross, E Block, Sahakara Nagar",
       phone: "9494922080, 9849356197",
-      email: "contact.sgilogistics@gmail.com"
+      email: "contact@sgilogistics.in"
     },
   ];
 
@@ -169,7 +169,7 @@ export default function Contact() {
                 <div className="contact-icon-box"><Mail size={22} /></div>
                 <div className="contact-info-text">
                   <h4>Head Office Email</h4>
-                  <p>contact.sgilogistics@gmail.com</p>
+                  <p>contact@sgilogistics.in</p>
                 </div>
               </div>
 
